@@ -154,6 +154,36 @@ a:hover { text-decoration: underline; }
 .pub-title { margin: 0 0 6px; font-weight: 600; }
 .pub-meta { margin: 0; color: var(--muted); font-size: .92rem; }
 
+/* subheadings dentro de uma seção */
+.subhead {
+  font-size: 1.05rem;
+  color: var(--accent);
+  margin: 34px 0 14px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+/* lista numerada de publicações */
+.pubs.numbered {
+  list-style: decimal;
+  padding-left: 26px;
+}
+.pubs.numbered li {
+  display: list-item;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0 0 12px 6px;
+  margin: 0;
+  color: var(--muted);
+  font-size: .93rem;
+  line-height: 1.5;
+}
+.pubs.numbered li strong { color: var(--text); font-weight: 600; }
+.pubs.numbered li::marker { color: var(--accent); font-weight: 700; }
+
+.social.left { justify-content: flex-start; margin-top: 14px; }
+
 /* ---------- GRID / CARDS ---------- */
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
 .card {
