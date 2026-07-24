@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bruno Menezes — Especialista em Inteligência Artificial</title>
-  <meta name="description" content="Bruno Menezes: Especialista em Inteligência Artificial, Ciência de Dados e Machine Learning. Pós-Doutor em Computação, professor e pesquisador." />
+  <title>Bruno Menezes — AI Engineer | GenAI &amp; LLM Systems</title>
+  <meta name="description" content="Bruno Menezes — AI Engineer especializado em sistemas GenAI e LLM em produção: RAG, NLP, busca vetorial (FAISS), Python, HPC e MLOps." />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
-<body>
+<body class="lang-pt">
   <header class="hero">
     <nav class="nav">
       <a class="brand" href="#top">BM</a>
       <div class="nav-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#competencias">Competências</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#destaques">Destaques</a>
-        <a href="#contato">Contato</a>
+        <a href="#sobre"><span class="pt">Sobre</span><span class="en">About</span></a>
+        <a href="#competencias"><span class="pt">Competências</span><span class="en">Skills</span></a>
+        <a href="#experiencia"><span class="pt">Experiência</span><span class="en">Experience</span></a>
+        <a href="#certificacoes"><span class="pt">Certificações</span><span class="en">Certifications</span></a>
+        <a href="#contato"><span class="pt">Contato</span><span class="en">Contact</span></a>
+        <button id="langToggle" class="lang-btn" type="button" aria-label="Trocar idioma">
+          <span class="pt">EN</span><span class="en">PT</span>
+        </button>
       </div>
     </nav>
 
@@ -24,15 +27,17 @@
       <img class="avatar" src="assets/avatar.jpg" alt="Foto de Bruno Menezes"
            onerror="this.style.display='none'" />
       <h1>Bruno Menezes</h1>
-      <p class="tagline">Especialista em Inteligência Artificial &amp; Ciência de Dados</p>
-      <p class="affil">Machine Learning · NLP/LLMs · Engenharia de Dados · Pós-Doutor em Computação</p>
+      <p class="tagline">AI Engineer · GenAI &amp; LLM Systems</p>
+      <p class="affil">RAG · NLP · Busca Vetorial (FAISS) · Python · HPC · Production AI · MLOps</p>
+      <p class="loc">📍 Resende, Rio de Janeiro, Brasil</p>
       <div class="cta">
-        <a class="btn" href="#contato">Fale comigo</a>
+        <a class="btn" href="#contato"><span class="pt">Fale comigo</span><span class="en">Get in touch</span></a>
         <a class="btn ghost" href="https://www.linkedin.com/in/bruno-menezes-93638b23/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
       <div class="social">
         <a href="mailto:professor.menezesbruno@gmail.com">✉︎ E-mail</a>
         <a href="https://www.linkedin.com/in/bruno-menezes-93638b23/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://sites.google.com/view/professorbrunomenezes" target="_blank" rel="noopener">Portfólio</a>
         <a href="https://github.com/brunoleomenezes" target="_blank" rel="noopener">GitHub</a>
         <a href="https://orcid.org/0000-0001-6249-2395" target="_blank" rel="noopener">ORCID</a>
         <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Lattes</a>
@@ -41,111 +46,179 @@
   </header>
 
   <main>
-    <!-- ===================== SOBRE ===================== -->
+    <!-- ===================== SOBRE / ABOUT ===================== -->
     <section id="sobre" class="section">
-      <h2>Sobre</h2>
-      <p class="lead">
-        Especialista em Inteligência Artificial com atuação em <strong>machine learning</strong>,
-        <strong>processamento de linguagem natural</strong> e <strong>engenharia de dados</strong>,
-        transformando problemas complexos de negócio em soluções aplicadas. Une a prática de mercado —
-        desenvolvimento de modelos, APIs e pipelines de dados em escala — à base sólida de pesquisa,
-        com pós-doutorado, doutorado e mestrado em Computação.
+      <h2><span class="pt">Sobre</span><span class="en">About</span></h2>
+      <p class="lead pt">
+        Projeto e coloco em produção sistemas baseados em <strong>LLMs</strong> que reduzem latência,
+        otimizam o custo de inferência e viabilizam aplicações de IA escaláveis em ambientes reais. Meu
+        trabalho reúne arquiteturas <strong>RAG</strong> (OCR, embeddings, indexação FAISS e reranking),
+        otimização de pipelines de inferência em <strong>HPC</strong> e nuvem, e backends de IA em produção
+        com Python, APIs e processamento distribuído.
       </p>
+      <p class="lead en">
+        I design and deploy production-grade <strong>LLM systems</strong> that reduce latency, optimize
+        inference cost, and enable scalable AI applications in real environments. My work combines scalable
+        <strong>RAG</strong> architectures (OCR, embeddings, FAISS indexing and reranking), inference-pipeline
+        optimization across <strong>HPC</strong> and cloud, and production AI backends built with Python, APIs
+        and distributed processing.
+      </p>
+      <p class="pt">Atuo na interseção entre pesquisa e engenharia de produção, traduzindo pesquisa avançada
+        de IA em sistemas implantáveis.</p>
+      <p class="en">I operate at the intersection of research and production engineering, translating advanced
+        AI research into deployable systems.</p>
     </section>
 
-    <!-- ===================== COMPETÊNCIAS ===================== -->
+    <!-- ===================== COMPETÊNCIAS / SKILLS ===================== -->
     <section id="competencias" class="section alt">
-      <h2>Competências</h2>
+      <h2><span class="pt">Competências</span><span class="en">Skills</span></h2>
       <div class="grid">
         <div class="card">
-          <h3>IA &amp; Machine Learning</h3>
-          <p>Deep learning, arquiteturas Transformers, LLMs, PLN, modelos preditivos e de decisão.</p>
+          <h3><span class="pt">GenAI &amp; LLMs</span><span class="en">GenAI &amp; LLMs</span></h3>
+          <p class="pt">RAG, NLP, geração controlada, reranking, avaliação de confiabilidade e citação.</p>
+          <p class="en">RAG, NLP, controlled generation, reranking, reliability and citation evaluation.</p>
         </div>
         <div class="card">
-          <h3>Engenharia de Dados</h3>
-          <p>Ecossistema Hadoop, ingestão e processamento de grandes volumes, pipelines e Cloud.</p>
+          <h3><span class="pt">Busca Vetorial &amp; OCR</span><span class="en">Vector Search &amp; OCR</span></h3>
+          <p class="pt">Embeddings, indexação FAISS, extração de informação e OCR em pipelines multi-estágio.</p>
+          <p class="en">Embeddings, FAISS indexing, information extraction and OCR in multi-stage pipelines.</p>
         </div>
         <div class="card">
-          <h3>Desenvolvimento</h3>
-          <p>Python (APIs em Flask, integração com LLMs), Java e C para soluções de alto desempenho.</p>
+          <h3><span class="pt">HPC &amp; MLOps</span><span class="en">HPC &amp; MLOps</span></h3>
+          <p class="pt">Otimização de inferência, computação de alto desempenho, LLMOps e ecossistema Hadoop/Cloud.</p>
+          <p class="en">Inference optimization, high-performance computing, LLMOps and Hadoop/Cloud ecosystem.</p>
         </div>
         <div class="card">
-          <h3>Análise de Decisão</h3>
-          <p>Pesquisa Operacional e métodos multicritério (AHP/ANP) aplicados a negócio e logística.</p>
+          <h3><span class="pt">Engenharia de Software</span><span class="en">Software Engineering</span></h3>
+          <p class="pt">Python (Flask, APIs), Java e C para aplicações de alto throughput; Git.</p>
+          <p class="en">Python (Flask, APIs), Java and C for high-throughput applications; Git.</p>
         </div>
+      </div>
+      <div class="tags">
+        <span>Optical Character Recognition (OCR)</span>
+        <span>High Performance Computing (HPC)</span>
+        <span>LLMOps</span>
+        <span>RAG</span>
+        <span>FAISS · Vector Search</span>
+        <span>NLP</span>
+        <span>Python</span>
       </div>
     </section>
 
-    <!-- ===================== EXPERIÊNCIA ===================== -->
+    <!-- ===================== EXPERIÊNCIA / EXPERIENCE ===================== -->
     <section id="experiencia" class="section">
-      <h2>Experiência</h2>
+      <h2><span class="pt">Experiência</span><span class="en">Experience</span></h2>
       <ol class="timeline">
         <li>
-          <span class="when">2022 — 2026</span>
-          <h3>Especialista em Inteligência Artificial</h3>
-          <p class="where">Capgemini</p>
-          <p>Desenvolvimento e implementação de algoritmos para problemas complexos de negócio, com o
-             ecossistema Hadoop para processamento de grandes volumes de dados, APIs em Flask/Python e Cloud.</p>
+          <span class="when">2025 — <span class="pt">presente</span><span class="en">present</span></span>
+          <h3>AI Solutions Specialist</h3>
+          <p class="where">LNCC — Laboratório Nacional de Computação Científica</p>
+          <p class="pt">Arquitetura e implantação de sistemas baseados em LLM em ambientes HPC. Pipelines RAG
+            multi-estágio (OCR, embeddings, FAISS, reranking, geração controlada), otimização de inferência
+            e frameworks de avaliação de confiabilidade e qualidade de citação.</p>
+          <p class="en">Architected and deployed large-scale LLM-based systems in HPC environments.
+            Multi-stage RAG pipelines (OCR, embeddings, FAISS, reranking, controlled generation), inference
+            optimization and evaluation frameworks for reliability, citation quality and evidence gating.</p>
         </li>
         <li>
-          <span class="when">2023 — presente</span>
-          <h3>Professor e Pesquisador</h3>
-          <p class="where">FAETEC — Governo do Estado do Rio de Janeiro</p>
-          <p>Docência e pesquisa em Computação, Administração e Logística.</p>
+          <span class="when">2022 — 2026</span>
+          <h3><span class="pt">Especialista em Machine Learning &amp; Deep Learning</span><span class="en">Specialist in Machine Learning &amp; Deep Learning</span></h3>
+          <p class="where">Capgemini</p>
+          <p class="pt">Desenvolvimento e implementação de algoritmos de ML e deep learning para problemas
+            complexos de negócio. Ecossistema Hadoop para grandes volumes de dados, APIs em Flask/Python,
+            Cloud e Git.</p>
+          <p class="en">Development and implementation of ML and deep learning algorithms for complex business
+            problems. Hadoop ecosystem for large data volumes, Flask/Python APIs, Cloud and Git.</p>
+        </li>
+        <li>
+          <span class="when">2023 — <span class="pt">presente</span><span class="en">present</span></span>
+          <h3><span class="pt">Professor</span><span class="en">Professor</span></h3>
+          <p class="where">FAETEC — Rio de Janeiro</p>
+          <p class="pt">Professor na área de Computação.</p>
+          <p class="en">Professor in the field of Computing.</p>
+        </li>
+        <li>
+          <span class="when">2023 — 2026</span>
+          <h3><span class="pt">AI &amp; Systems Engineer (Autônomo)</span><span class="en">AI &amp; Systems Engineer (Independent)</span></h3>
+          <p class="where"><span class="pt">Projetos independentes</span><span class="en">Independent projects</span></p>
+          <p class="pt">Backends de IA em Python/Flask com integração a LLMs, APIs escaláveis de inferência,
+            soluções de alto throughput em Python, Java e C, e sistemas ponta a ponta com embeddings, busca
+            vetorial, reranking e geração de respostas.</p>
+          <p class="en">AI backends in Python/Flask with LLM integrations, scalable inference APIs,
+            high-throughput solutions in Python, Java and C, and end-to-end systems with embeddings, vector
+            search, reranking and response generation.</p>
         </li>
         <li>
           <span class="when">2021 — 2023</span>
-          <h3>Pesquisador em IA · Professor</h3>
+          <h3><span class="pt">Pesquisador &amp; Professor (Pós-doc)</span><span class="en">Researcher &amp; Professor (Postdoc)</span></h3>
           <p class="where">SENAI CIMATEC</p>
-          <p>P&amp;D no Centro de Competência em IA (aprendizado de máquina e profundo, PLN) e docência na
-             Especialização em Data Science &amp; Analytics.</p>
-        </li>
-        <li>
-          <span class="when">2023 — 2024</span>
-          <h3>Desenvolvedor de Sistemas (Autônomo)</h3>
-          <p class="where">Projetos com IA e LLMs</p>
-          <p>Aplicações em Python com integração a modelos de linguagem, APIs e soluções de alto desempenho.</p>
+          <p class="pt">Pós-doutorado em IA (PLN, machine e deep learning, arquitetura Transformers, HPC,
+            Linux, Python). Docência na Especialização em Data Science &amp; Analytics.</p>
+          <p class="en">Postdoctoral research in AI (NLP, machine and deep learning, Transformer architecture,
+            HPC, Linux, Python). Teaching in the Data Science &amp; Analytics specialization.</p>
         </li>
       </ol>
-      <p class="muted">Trajetória anterior de mais de 10 anos em logística, operações e gestão pública
-        (Itaú Unibanco, Grupo Saraiva, Wilson Sons, prefeitura e docência).</p>
+      <p class="muted pt">Mais de 10 anos de trajetória anterior em gestão pública, docência e logística
+        (Prefeitura de Lauro de Freitas, Governo da Bahia, Itaú Unibanco, Saraiva, Wilson Sons, Contax).</p>
+      <p class="muted en">10+ years of prior experience in public administration, teaching and logistics
+        (Lauro de Freitas City Hall, Government of Bahia, Itaú Unibanco, Saraiva, Wilson Sons, Contax).</p>
     </section>
 
-    <!-- ===================== DESTAQUES ===================== -->
-    <section id="destaques" class="section alt">
-      <h2>Destaques</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Patente de software · INPI</h3>
-          <p>Quantum SPHINCS+ API Demo — assinatura digital pós-quântica resistente a ataques quânticos
-             (registro BR512025001807-0).</p>
-        </div>
-        <div class="card">
-          <h3>Publicação no ICLR 2026</h3>
-          <p>Evidence-Gated Scientific QA — sistema de perguntas e respostas científicas com abstenção
-             explícita e proveniência (Workshop Foundation Models for Science).</p>
-        </div>
-        <div class="card">
-          <h3>Pós-Doutorado no LNCC</h3>
-          <p>Pesquisa em Inteligência Artificial no Laboratório Nacional de Computação Científica.</p>
-        </div>
-        <div class="card">
-          <h3>Formação em Computação</h3>
-          <p>Doutorado e Mestrado em Modelagem Computacional (SENAI CIMATEC) e Especialização em
-             Engenharia de Dados (UFRJ).</p>
-        </div>
+    <!-- ===================== CERTIFICAÇÕES / CERTIFICATIONS ===================== -->
+    <section id="certificacoes" class="section alt">
+      <h2><span class="pt">Formação &amp; Certificações</span><span class="en">Education &amp; Certifications</span></h2>
+
+      <h3 class="subhead"><span class="pt">Formação</span><span class="en">Education</span></h3>
+      <ul class="pubs">
+        <li>
+          <p class="pub-title"><span class="pt">Pós-Doutorado em Inteligência Artificial</span><span class="en">Post-doctorate in Artificial Intelligence</span></p>
+          <p class="pub-meta">SENAI CIMATEC · LNCC</p>
+        </li>
+        <li>
+          <p class="pub-title"><span class="pt">Doutorado &amp; Mestrado em Modelagem Computacional e Tecnologia Industrial</span><span class="en">Doctorate &amp; Master's in Computational Modeling and Industrial Technology</span></p>
+          <p class="pub-meta">SENAI CIMATEC</p>
+        </li>
+        <li>
+          <p class="pub-title"><span class="pt">Especialização em Engenharia de Dados</span><span class="en">Specialization in Data Engineering</span></p>
+          <p class="pub-meta">UFRJ — Universidade Federal do Rio de Janeiro</p>
+        </li>
+        <li>
+          <p class="pub-title"><span class="pt">Especialização em Computação Quântica</span><span class="en">Specialization in Quantum Computing</span></p>
+          <p class="pub-meta">Universidade CIMATEC</p>
+        </li>
+      </ul>
+
+      <h3 class="subhead"><span class="pt">Certificações</span><span class="en">Certifications</span></h3>
+      <div class="tags">
+        <span>Generative AI — Application Evaluation &amp; Governance</span>
+        <span>Data Engineering &amp; Machine Learning using Spark</span>
+        <span>Design e Implementação de Data Warehouses</span>
+        <span>Microsoft Azure Fundamentals</span>
+        <span>Green Belt — Metodologia DMAIC</span>
       </div>
-      <p class="muted">Produção acadêmica completa — artigos, capítulos e congressos — no
+
+      <h3 class="subhead"><span class="pt">Idiomas</span><span class="en">Languages</span></h3>
+      <div class="tags">
+        <span class="pt">Português — Nativo</span><span class="en">Portuguese — Native</span>
+        <span class="pt">Inglês — Profissional</span><span class="en">English — Professional</span>
+        <span class="pt">Espanhol — Profissional</span><span class="en">Spanish — Professional</span>
+      </div>
+
+      <p class="muted pt">Produção acadêmica e patente (Quantum SPHINCS+ · INPI) no
         <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Currículo Lattes</a>.</p>
+      <p class="muted en">Full academic record and patent (Quantum SPHINCS+ · INPI) on the
+        <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Lattes CV</a>.</p>
     </section>
 
-    <!-- ===================== CONTATO ===================== -->
+    <!-- ===================== CONTATO / CONTACT ===================== -->
     <section id="contato" class="section">
-      <h2>Contato</h2>
-      <p class="lead">Aberto a oportunidades e colaborações em IA, Ciência de Dados e Machine Learning.</p>
+      <h2><span class="pt">Contato</span><span class="en">Contact</span></h2>
+      <p class="lead pt">Aberto a oportunidades e colaborações em IA generativa, sistemas LLM e engenharia de IA.</p>
+      <p class="lead en">Open to opportunities and collaborations in generative AI, LLM systems and AI engineering.</p>
       <p>✉︎ <a href="mailto:professor.menezesbruno@gmail.com">professor.menezesbruno@gmail.com</a></p>
       <div class="social left">
         <a href="https://www.linkedin.com/in/bruno-menezes-93638b23/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://sites.google.com/view/professorbrunomenezes" target="_blank" rel="noopener">Portfólio</a>
         <a href="https://github.com/brunoleomenezes" target="_blank" rel="noopener">GitHub</a>
         <a href="https://orcid.org/0000-0001-6249-2395" target="_blank" rel="noopener">ORCID</a>
         <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Lattes</a>
@@ -154,8 +227,25 @@
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Bruno Menezes · Hospedado no GitHub Pages</p>
+    <p>© <span id="year"></span> Bruno Menezes · <span class="pt">Hospedado no GitHub Pages</span><span class="en">Hosted on GitHub Pages</span></p>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    (function () {
+      var body = document.body;
+      var saved = localStorage.getItem('lang');
+      if (saved === 'en' || saved === 'pt') setLang(saved);
+      function setLang(lang) {
+        body.classList.remove('lang-pt', 'lang-en');
+        body.classList.add('lang-' + lang);
+        document.documentElement.lang = (lang === 'en') ? 'en' : 'pt-BR';
+        localStorage.setItem('lang', lang);
+      }
+      document.getElementById('langToggle').addEventListener('click', function () {
+        setLang(body.classList.contains('lang-en') ? 'pt' : 'en');
+      });
+    })();
+  </script>
 </body>
 </html>
