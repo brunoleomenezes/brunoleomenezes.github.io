@@ -3,246 +3,336 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bruno Menezes — AI Engineer | GenAI &amp; LLM Systems</title>
+  <title>Bruno Menezes — AI Engineer · GenAI &amp; LLM Systems</title>
   <meta name="description" content="Bruno Menezes — AI Engineer especializado em sistemas GenAI e LLM em produção: RAG, NLP, busca vetorial (FAISS), Python, HPC e MLOps." />
-  <link rel="stylesheet" href="assets/style.css?v=2" />
+  <meta name="author" content="Bruno Menezes" />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Bruno Menezes — AI Engineer · GenAI & LLM Systems" />
+  <meta property="og:description" content="Sistemas GenAI e LLM em produção: RAG, NLP, busca vetorial (FAISS), Python, HPC e MLOps." />
+  <meta property="og:url" content="https://brunoleomenezes.github.io/" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bruno Menezes — AI Engineer" />
+  <meta name="twitter:description" content="GenAI & LLM Systems · RAG · NLP · FAISS · Python · HPC · MLOps" />
+
+  <link rel="canonical" href="https://brunoleomenezes.github.io/" />
+  <!-- Favicon: monograma BM em SVG -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236366f1'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='%230b0f19'%3EBM%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css?v=3" />
+
+  <!-- Dados estruturados: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bruno Menezes",
+    "jobTitle": "AI Engineer",
+    "email": "mailto:professor.menezesbruno@gmail.com",
+    "url": "https://brunoleomenezes.github.io/",
+    "knowsAbout": ["Generative AI", "Large Language Models", "RAG", "NLP", "Vector Search", "FAISS", "High Performance Computing", "MLOps", "Python"],
+    "sameAs": [
+      "https://www.linkedin.com/in/bruno-menezes-93638b23/",
+      "https://github.com/brunoleomenezes",
+      "https://orcid.org/0000-0001-6249-2395",
+      "http://lattes.cnpq.br/7671983530035555"
+    ]
+  }
+  </script>
 </head>
 <body class="lang-pt">
-  <header class="hero">
-    <nav class="nav">
-      <a class="brand" href="#top">BM</a>
-      <div class="nav-links">
+  <a class="skip-link" href="#main"><span class="pt">Pular para o conteúdo</span><span class="en">Skip to content</span></a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Bruno Menezes">
+        <span class="brand-mark">BM</span>
+        <span class="brand-name">Bruno Menezes</span>
+      </a>
+      <nav class="nav" aria-label="Primária">
         <a href="#sobre"><span class="pt">Sobre</span><span class="en">About</span></a>
         <a href="#competencias"><span class="pt">Competências</span><span class="en">Skills</span></a>
         <a href="#experiencia"><span class="pt">Experiência</span><span class="en">Experience</span></a>
-        <a href="#certificacoes"><span class="pt">Certificações</span><span class="en">Certifications</span></a>
+        <a href="#formacao"><span class="pt">Formação</span><span class="en">Education</span></a>
         <a href="#contato"><span class="pt">Contato</span><span class="en">Contact</span></a>
-        <button id="langToggle" class="lang-btn" type="button" aria-label="Trocar idioma">
+      </nav>
+      <div class="header-actions">
+        <button id="langToggle" class="pill-btn" type="button" aria-label="Alternar idioma">
           <span class="pt">EN</span><span class="en">PT</span>
         </button>
-      </div>
-    </nav>
-
-    <div class="hero-inner" id="top">
-      <img class="avatar" src="assets/avatar.jpg" alt="Foto de Bruno Menezes"
-           onerror="this.style.display='none'" />
-      <h1>Bruno Menezes</h1>
-      <p class="tagline">AI Engineer · GenAI &amp; LLM Systems</p>
-      <p class="affil">RAG · NLP · Busca Vetorial (FAISS) · Python · HPC · Production AI · MLOps</p>
-      <div class="cta">
-        <a class="btn" href="#contato"><span class="pt">Fale comigo</span><span class="en">Get in touch</span></a>
-      </div>
-      <div class="social">
-        <a href="mailto:professor.menezesbruno@gmail.com">✉︎ E-mail</a>
-        <a href="https://www.linkedin.com/in/bruno-menezes-93638b23/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://sites.google.com/view/professorbrunomenezes" target="_blank" rel="noopener">Portfólio</a>
-        <a href="https://github.com/brunoleomenezes" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://orcid.org/0000-0001-6249-2395" target="_blank" rel="noopener">ORCID</a>
-        <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Lattes</a>
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Alternar tema" title="Tema claro/escuro">
+          <svg class="ic-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="ic-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- ===================== SOBRE / ABOUT ===================== -->
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="kicker">AI Engineer · GenAI &amp; LLM Systems</p>
+          <h1>Bruno <span class="grad">Menezes</span></h1>
+          <p class="hero-sub pt">Projeto e coloco em produção sistemas baseados em <strong>LLMs</strong> — RAG, busca vetorial e otimização de inferência em HPC e nuvem.</p>
+          <p class="hero-sub en">I design and ship production-grade <strong>LLM systems</strong> — RAG, vector search and inference optimization across HPC and cloud.</p>
+          <ul class="chips">
+            <li>RAG</li><li>NLP</li><li>FAISS</li><li>Python</li><li>HPC</li><li>MLOps</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary" href="#contato"><span class="pt">Fale comigo</span><span class="en">Get in touch</span></a>
+            <a class="btn ghost" href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener"><span class="pt">Currículo</span><span class="en">Résumé</span></a>
+          </div>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/bruno-menezes-93638b23/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://github.com/brunoleomenezes" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+            <a href="https://sites.google.com/view/professorbrunomenezes" target="_blank" rel="noopener">Portfólio</a>
+            <a href="https://orcid.org/0000-0001-6249-2395" target="_blank" rel="noopener">ORCID</a>
+            <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Lattes</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="avatar-ring">
+            <img class="avatar" src="assets/avatar.jpg" alt="Foto de Bruno Menezes" onerror="this.remove()" />
+            <span class="avatar-mono" aria-hidden="true">BM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
     <section id="sobre" class="section">
-      <h2><span class="pt">Sobre</span><span class="en">About</span></h2>
-      <p class="lead pt">
-        Projeto e coloco em produção sistemas baseados em <strong>LLMs</strong> que reduzem latência,
-        otimizam o custo de inferência e viabilizam aplicações de IA escaláveis em ambientes reais. Meu
-        trabalho reúne arquiteturas <strong>RAG</strong> (OCR, embeddings, indexação FAISS e reranking),
-        otimização de pipelines de inferência em <strong>HPC</strong> e nuvem, e backends de IA em produção
-        com Python, APIs e processamento distribuído.
-      </p>
-      <p class="lead en">
-        I design and deploy production-grade <strong>LLM systems</strong> that reduce latency, optimize
-        inference cost, and enable scalable AI applications in real environments. My work combines scalable
-        <strong>RAG</strong> architectures (OCR, embeddings, FAISS indexing and reranking), inference-pipeline
-        optimization across <strong>HPC</strong> and cloud, and production AI backends built with Python, APIs
-        and distributed processing.
-      </p>
-      <p class="pt">Atuo na interseção entre pesquisa e engenharia de produção, traduzindo pesquisa avançada
-        de IA em sistemas implantáveis.</p>
-      <p class="en">I operate at the intersection of research and production engineering, translating advanced
-        AI research into deployable systems.</p>
+      <div class="container">
+        <p class="section-kicker">01 — <span class="pt">Sobre</span><span class="en">About</span></p>
+        <h2 class="section-title"><span class="pt">Pesquisa aplicada, engenharia de produção.</span><span class="en">Applied research, production engineering.</span></h2>
+        <div class="prose reveal">
+          <p class="pt">Projeto e coloco em produção sistemas baseados em <strong>LLMs</strong> que reduzem latência, otimizam o custo de inferência e viabilizam aplicações de IA escaláveis em ambientes reais. Meu trabalho reúne arquiteturas <strong>RAG</strong> (OCR, embeddings, indexação FAISS e reranking), otimização de pipelines de inferência em <strong>HPC</strong> e nuvem, e backends de IA em produção com Python, APIs e processamento distribuído.</p>
+          <p class="en">I design and deploy production-grade <strong>LLM systems</strong> that reduce latency, optimize inference cost, and enable scalable AI applications in real environments. My work combines scalable <strong>RAG</strong> architectures (OCR, embeddings, FAISS indexing and reranking), inference-pipeline optimization across <strong>HPC</strong> and cloud, and production AI backends built with Python, APIs and distributed processing.</p>
+          <p class="pt muted">Atuo na interseção entre pesquisa e engenharia de produção, traduzindo pesquisa avançada de IA em sistemas implantáveis.</p>
+          <p class="en muted">I operate at the intersection of research and production engineering, turning advanced AI research into deployable systems.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label"><span class="pt">anos de experiência</span><span class="en">years of experience</span></span></div>
+          <div class="stat"><span class="stat-num">Pós-Doc</span><span class="stat-label"><span class="pt">em Inteligência Artificial</span><span class="en">in Artificial Intelligence</span></span></div>
+          <div class="stat"><span class="stat-num">INPI</span><span class="stat-label"><span class="pt">patente de software</span><span class="en">software patent</span></span></div>
+          <div class="stat"><span class="stat-num">3</span><span class="stat-label"><span class="pt">idiomas</span><span class="en">languages</span></span></div>
+        </div>
+      </div>
     </section>
 
-    <!-- ===================== COMPETÊNCIAS / SKILLS ===================== -->
+    <!-- ===================== COMPETÊNCIAS ===================== -->
     <section id="competencias" class="section alt">
-      <h2><span class="pt">Competências</span><span class="en">Skills</span></h2>
-      <div class="grid">
-        <div class="card">
-          <h3><span class="pt">GenAI &amp; LLMs</span><span class="en">GenAI &amp; LLMs</span></h3>
-          <p class="pt">RAG, NLP, geração controlada, reranking, avaliação de confiabilidade e citação.</p>
-          <p class="en">RAG, NLP, controlled generation, reranking, reliability and citation evaluation.</p>
+      <div class="container">
+        <p class="section-kicker">02 — <span class="pt">Competências</span><span class="en">Skills</span></p>
+        <h2 class="section-title"><span class="pt">O que eu construo</span><span class="en">What I build</span></h2>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v1a3 3 0 0 0 0 6v1a3 3 0 0 0 6 0v-1a3 3 0 0 0 0-6V5a3 3 0 0 0-3-3z"/><path d="M6 9a3 3 0 0 0 0 6M18 9a3 3 0 0 1 0 6"/></svg>
+            </div>
+            <h3>GenAI &amp; LLMs</h3>
+            <p class="pt">RAG, NLP, geração controlada, reranking e avaliação de confiabilidade e citação.</p>
+            <p class="en">RAG, NLP, controlled generation, reranking, and reliability &amp; citation evaluation.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            </div>
+            <h3><span class="pt">Busca Vetorial &amp; OCR</span><span class="en">Vector Search &amp; OCR</span></h3>
+            <p class="pt">Embeddings, indexação FAISS, extração de informação e OCR em pipelines multi-estágio.</p>
+            <p class="en">Embeddings, FAISS indexing, information extraction and OCR in multi-stage pipelines.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <h3>HPC &amp; MLOps</h3>
+            <p class="pt">Otimização de inferência, computação de alto desempenho, LLMOps e ecossistema Hadoop/Cloud.</p>
+            <p class="en">Inference optimization, high-performance computing, LLMOps and Hadoop/Cloud ecosystem.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l-6 6 6 6M16 6l6 6-6 6"/></svg>
+            </div>
+            <h3><span class="pt">Engenharia de Software</span><span class="en">Software Engineering</span></h3>
+            <p class="pt">Python (Flask, APIs), Java e C para aplicações de alto throughput; Git.</p>
+            <p class="en">Python (Flask, APIs), Java and C for high-throughput applications; Git.</p>
+          </article>
         </div>
-        <div class="card">
-          <h3><span class="pt">Busca Vetorial &amp; OCR</span><span class="en">Vector Search &amp; OCR</span></h3>
-          <p class="pt">Embeddings, indexação FAISS, extração de informação e OCR em pipelines multi-estágio.</p>
-          <p class="en">Embeddings, FAISS indexing, information extraction and OCR in multi-stage pipelines.</p>
-        </div>
-        <div class="card">
-          <h3><span class="pt">HPC &amp; MLOps</span><span class="en">HPC &amp; MLOps</span></h3>
-          <p class="pt">Otimização de inferência, computação de alto desempenho, LLMOps e ecossistema Hadoop/Cloud.</p>
-          <p class="en">Inference optimization, high-performance computing, LLMOps and Hadoop/Cloud ecosystem.</p>
-        </div>
-        <div class="card">
-          <h3><span class="pt">Engenharia de Software</span><span class="en">Software Engineering</span></h3>
-          <p class="pt">Python (Flask, APIs), Java e C para aplicações de alto throughput; Git.</p>
-          <p class="en">Python (Flask, APIs), Java and C for high-throughput applications; Git.</p>
-        </div>
-      </div>
-      <div class="tags">
-        <span>Optical Character Recognition (OCR)</span>
-        <span>High Performance Computing (HPC)</span>
-        <span>LLMOps</span>
-        <span>RAG</span>
-        <span>FAISS · Vector Search</span>
-        <span>NLP</span>
-        <span>Python</span>
+        <ul class="chips wide reveal">
+          <li>OCR</li><li>High Performance Computing</li><li>LLMOps</li><li>RAG</li><li>FAISS · Vector Search</li><li>NLP</li><li>Transformers</li><li>Python · Flask</li><li>Hadoop · Cloud</li>
+        </ul>
       </div>
     </section>
 
-    <!-- ===================== EXPERIÊNCIA / EXPERIENCE ===================== -->
+    <!-- ===================== EXPERIÊNCIA ===================== -->
     <section id="experiencia" class="section">
-      <h2><span class="pt">Experiência</span><span class="en">Experience</span></h2>
-      <ol class="timeline">
-        <li>
-          <span class="when">2025 — <span class="pt">presente</span><span class="en">present</span></span>
-          <h3>AI Solutions Specialist</h3>
-          <p class="where">LNCC — Laboratório Nacional de Computação Científica</p>
-          <p class="pt">Arquitetura e implantação de sistemas baseados em LLM em ambientes HPC. Pipelines RAG
-            multi-estágio (OCR, embeddings, FAISS, reranking, geração controlada), otimização de inferência
-            e frameworks de avaliação de confiabilidade e qualidade de citação.</p>
-          <p class="en">Architected and deployed large-scale LLM-based systems in HPC environments.
-            Multi-stage RAG pipelines (OCR, embeddings, FAISS, reranking, controlled generation), inference
-            optimization and evaluation frameworks for reliability, citation quality and evidence gating.</p>
-        </li>
-        <li>
-          <span class="when">2022 — 2026</span>
-          <h3><span class="pt">Especialista em Machine Learning &amp; Deep Learning</span><span class="en">Specialist in Machine Learning &amp; Deep Learning</span></h3>
-          <p class="where">Capgemini</p>
-          <p class="pt">Desenvolvimento e implementação de algoritmos de ML e deep learning para problemas
-            complexos de negócio. Ecossistema Hadoop para grandes volumes de dados, APIs em Flask/Python,
-            Cloud e Git.</p>
-          <p class="en">Development and implementation of ML and deep learning algorithms for complex business
-            problems. Hadoop ecosystem for large data volumes, Flask/Python APIs, Cloud and Git.</p>
-        </li>
-        <li>
-          <span class="when">2023 — <span class="pt">presente</span><span class="en">present</span></span>
-          <h3><span class="pt">Professor</span><span class="en">Professor</span></h3>
-          <p class="where">FAETEC — Rio de Janeiro</p>
-          <p class="pt">Professor na área de Computação.</p>
-          <p class="en">Professor in the field of Computing.</p>
-        </li>
-        <li>
-          <span class="when">2023 — 2026</span>
-          <h3><span class="pt">AI &amp; Systems Engineer (Autônomo)</span><span class="en">AI &amp; Systems Engineer (Independent)</span></h3>
-          <p class="where"><span class="pt">Projetos independentes</span><span class="en">Independent projects</span></p>
-          <p class="pt">Backends de IA em Python/Flask com integração a LLMs, APIs escaláveis de inferência,
-            soluções de alto throughput em Python, Java e C, e sistemas ponta a ponta com embeddings, busca
-            vetorial, reranking e geração de respostas.</p>
-          <p class="en">AI backends in Python/Flask with LLM integrations, scalable inference APIs,
-            high-throughput solutions in Python, Java and C, and end-to-end systems with embeddings, vector
-            search, reranking and response generation.</p>
-        </li>
-        <li>
-          <span class="when">2021 — 2023</span>
-          <h3><span class="pt">Pesquisador &amp; Professor (Pós-doc)</span><span class="en">Researcher &amp; Professor (Postdoc)</span></h3>
-          <p class="where">SENAI CIMATEC</p>
-          <p class="pt">Pós-doutorado em IA (PLN, machine e deep learning, arquitetura Transformers, HPC,
-            Linux, Python). Docência na Especialização em Data Science &amp; Analytics.</p>
-          <p class="en">Postdoctoral research in AI (NLP, machine and deep learning, Transformer architecture,
-            HPC, Linux, Python). Teaching in the Data Science &amp; Analytics specialization.</p>
-        </li>
-      </ol>
-      <p class="muted pt">Mais de 10 anos de trajetória anterior em gestão pública, docência e logística
-        (Prefeitura de Lauro de Freitas, Governo da Bahia, Itaú Unibanco, Saraiva, Wilson Sons, Contax).</p>
-      <p class="muted en">10+ years of prior experience in public administration, teaching and logistics
-        (Lauro de Freitas City Hall, Government of Bahia, Itaú Unibanco, Saraiva, Wilson Sons, Contax).</p>
+      <div class="container">
+        <p class="section-kicker">03 — <span class="pt">Experiência</span><span class="en">Experience</span></p>
+        <h2 class="section-title"><span class="pt">Trajetória</span><span class="en">Career</span></h2>
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="when">2025 — <span class="pt">presente</span><span class="en">present</span></span>
+            <h3>AI Solutions Specialist</h3>
+            <p class="where">LNCC — Laboratório Nacional de Computação Científica</p>
+            <p class="pt">Arquitetura e implantação de sistemas baseados em LLM em ambientes HPC. Pipelines RAG multi-estágio (OCR, embeddings, FAISS, reranking, geração controlada), otimização de inferência e frameworks de avaliação de confiabilidade e qualidade de citação.</p>
+            <p class="en">Architected and deployed large-scale LLM-based systems in HPC environments. Multi-stage RAG pipelines (OCR, embeddings, FAISS, reranking, controlled generation), inference optimization and evaluation frameworks for reliability, citation quality and evidence gating.</p>
+          </li>
+          <li class="reveal">
+            <span class="when">2022 — 2026</span>
+            <h3><span class="pt">Especialista em Machine Learning &amp; Deep Learning</span><span class="en">Specialist in Machine Learning &amp; Deep Learning</span></h3>
+            <p class="where">Capgemini</p>
+            <p class="pt">Desenvolvimento e implementação de algoritmos de ML e deep learning para problemas complexos de negócio. Ecossistema Hadoop para grandes volumes de dados, APIs em Flask/Python, Cloud e Git.</p>
+            <p class="en">Development and implementation of ML and deep learning algorithms for complex business problems. Hadoop ecosystem for large data volumes, Flask/Python APIs, Cloud and Git.</p>
+          </li>
+          <li class="reveal">
+            <span class="when">2023 — <span class="pt">presente</span><span class="en">present</span></span>
+            <h3><span class="pt">Professor</span><span class="en">Professor</span></h3>
+            <p class="where">FAETEC — Rio de Janeiro</p>
+            <p class="pt">Professor na área de Computação.</p>
+            <p class="en">Professor in the field of Computing.</p>
+          </li>
+          <li class="reveal">
+            <span class="when">2023 — 2026</span>
+            <h3><span class="pt">AI &amp; Systems Engineer (Autônomo)</span><span class="en">AI &amp; Systems Engineer (Independent)</span></h3>
+            <p class="where"><span class="pt">Projetos independentes</span><span class="en">Independent projects</span></p>
+            <p class="pt">Backends de IA em Python/Flask com integração a LLMs, APIs escaláveis de inferência, soluções de alto throughput em Python, Java e C, e sistemas ponta a ponta com embeddings, busca vetorial, reranking e geração de respostas.</p>
+            <p class="en">AI backends in Python/Flask with LLM integrations, scalable inference APIs, high-throughput solutions in Python, Java and C, and end-to-end systems with embeddings, vector search, reranking and response generation.</p>
+          </li>
+          <li class="reveal">
+            <span class="when">2021 — 2023</span>
+            <h3><span class="pt">Pesquisador &amp; Professor (Pós-doc)</span><span class="en">Researcher &amp; Professor (Postdoc)</span></h3>
+            <p class="where">SENAI CIMATEC</p>
+            <p class="pt">Pós-doutorado em IA (PLN, machine e deep learning, arquitetura Transformers, HPC, Linux, Python). Docência na Especialização em Data Science &amp; Analytics.</p>
+            <p class="en">Postdoctoral research in AI (NLP, machine and deep learning, Transformer architecture, HPC, Linux, Python). Teaching in the Data Science &amp; Analytics specialization.</p>
+          </li>
+        </ol>
+        <p class="muted pt center">Mais de 10 anos de trajetória anterior em gestão pública, docência e logística (Prefeitura de Lauro de Freitas, Governo da Bahia, Itaú Unibanco, Saraiva, Wilson Sons, Contax).</p>
+        <p class="muted en center">10+ years of prior experience in public administration, teaching and logistics (Lauro de Freitas City Hall, Government of Bahia, Itaú Unibanco, Saraiva, Wilson Sons, Contax).</p>
+      </div>
     </section>
 
-    <!-- ===================== CERTIFICAÇÕES / CERTIFICATIONS ===================== -->
-    <section id="certificacoes" class="section alt">
-      <h2><span class="pt">Formação &amp; Certificações</span><span class="en">Education &amp; Certifications</span></h2>
-
-      <h3 class="subhead"><span class="pt">Formação</span><span class="en">Education</span></h3>
-      <ul class="pubs">
-        <li>
-          <p class="pub-title"><span class="pt">Pós-Doutorado em Inteligência Artificial</span><span class="en">Post-doctorate in Artificial Intelligence</span></p>
-          <p class="pub-meta">SENAI CIMATEC · LNCC</p>
-        </li>
-        <li>
-          <p class="pub-title"><span class="pt">Doutorado &amp; Mestrado em Modelagem Computacional e Tecnologia Industrial</span><span class="en">Doctorate &amp; Master's in Computational Modeling and Industrial Technology</span></p>
-          <p class="pub-meta">SENAI CIMATEC</p>
-        </li>
-        <li>
-          <p class="pub-title"><span class="pt">Especialização em Engenharia de Dados</span><span class="en">Specialization in Data Engineering</span></p>
-          <p class="pub-meta">UFRJ — Universidade Federal do Rio de Janeiro</p>
-        </li>
-        <li>
-          <p class="pub-title"><span class="pt">Especialização em Computação Quântica</span><span class="en">Specialization in Quantum Computing</span></p>
-          <p class="pub-meta">Universidade CIMATEC</p>
-        </li>
-      </ul>
-
-      <h3 class="subhead"><span class="pt">Certificações</span><span class="en">Certifications</span></h3>
-      <div class="tags">
-        <span>Generative AI — Application Evaluation &amp; Governance</span>
-        <span>Data Engineering &amp; Machine Learning using Spark</span>
-        <span>Design e Implementação de Data Warehouses</span>
-        <span>Microsoft Azure Fundamentals</span>
-        <span>Green Belt — Metodologia DMAIC</span>
+    <!-- ===================== FORMAÇÃO & CERTIFICAÇÕES ===================== -->
+    <section id="formacao" class="section alt">
+      <div class="container">
+        <p class="section-kicker">04 — <span class="pt">Formação &amp; Certificações</span><span class="en">Education &amp; Certifications</span></p>
+        <h2 class="section-title"><span class="pt">Base acadêmica</span><span class="en">Academic foundation</span></h2>
+        <div class="edu-grid">
+          <div class="edu-col reveal">
+            <h3 class="colhead"><span class="pt">Formação</span><span class="en">Education</span></h3>
+            <ul class="edu-list">
+              <li><strong><span class="pt">Pós-Doutorado em Inteligência Artificial</span><span class="en">Post-doctorate in Artificial Intelligence</span></strong><span class="edu-org">SENAI CIMATEC · LNCC</span></li>
+              <li><strong><span class="pt">Doutorado &amp; Mestrado — Modelagem Computacional e Tecnologia Industrial</span><span class="en">Doctorate &amp; Master's — Computational Modeling and Industrial Technology</span></strong><span class="edu-org">SENAI CIMATEC</span></li>
+              <li><strong><span class="pt">Especialização em Engenharia de Dados</span><span class="en">Specialization in Data Engineering</span></strong><span class="edu-org">UFRJ</span></li>
+              <li><strong><span class="pt">Especialização em Computação Quântica</span><span class="en">Specialization in Quantum Computing</span></strong><span class="edu-org">Universidade CIMATEC</span></li>
+            </ul>
+          </div>
+          <div class="edu-col reveal">
+            <h3 class="colhead"><span class="pt">Certificações</span><span class="en">Certifications</span></h3>
+            <ul class="chips col">
+              <li>Generative AI — Application Evaluation &amp; Governance</li>
+              <li>Data Engineering &amp; Machine Learning using Spark</li>
+              <li>Design e Implementação de Data Warehouses</li>
+              <li>Microsoft Azure Fundamentals</li>
+              <li>Green Belt — Metodologia DMAIC</li>
+            </ul>
+            <h3 class="colhead"><span class="pt">Idiomas</span><span class="en">Languages</span></h3>
+            <ul class="chips col">
+              <li><span class="pt">Português — Nativo</span><span class="en">Portuguese — Native</span></li>
+              <li><span class="pt">Inglês — Profissional</span><span class="en">English — Professional</span></li>
+              <li><span class="pt">Espanhol — Profissional</span><span class="en">Spanish — Professional</span></li>
+            </ul>
+          </div>
+        </div>
+        <p class="muted pt">Produção acadêmica completa e patente (Quantum SPHINCS+ · INPI) no <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Currículo Lattes</a>.</p>
+        <p class="muted en">Full academic record and patent (Quantum SPHINCS+ · INPI) on the <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Lattes CV</a>.</p>
       </div>
-
-      <h3 class="subhead"><span class="pt">Idiomas</span><span class="en">Languages</span></h3>
-      <div class="tags">
-        <span class="pt">Português — Nativo</span><span class="en">Portuguese — Native</span>
-        <span class="pt">Inglês — Profissional</span><span class="en">English — Professional</span>
-        <span class="pt">Espanhol — Profissional</span><span class="en">Spanish — Professional</span>
-      </div>
-
-      <p class="muted pt">Produção acadêmica e patente (Quantum SPHINCS+ · INPI) no
-        <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Currículo Lattes</a>.</p>
-      <p class="muted en">Full academic record and patent (Quantum SPHINCS+ · INPI) on the
-        <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Lattes CV</a>.</p>
     </section>
 
-    <!-- ===================== CONTATO / CONTACT ===================== -->
+    <!-- ===================== CONTATO ===================== -->
     <section id="contato" class="section">
-      <h2><span class="pt">Contato</span><span class="en">Contact</span></h2>
-      <p class="lead pt">Aberto a oportunidades e colaborações em IA generativa, sistemas LLM e engenharia de IA.</p>
-      <p class="lead en">Open to opportunities and collaborations in generative AI, LLM systems and AI engineering.</p>
-      <p>✉︎ <a href="mailto:professor.menezesbruno@gmail.com">professor.menezesbruno@gmail.com</a></p>
-      <div class="social left">
-        <a href="https://www.linkedin.com/in/bruno-menezes-93638b23/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://sites.google.com/view/professorbrunomenezes" target="_blank" rel="noopener">Portfólio</a>
-        <a href="https://github.com/brunoleomenezes" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://orcid.org/0000-0001-6249-2395" target="_blank" rel="noopener">ORCID</a>
-        <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Lattes</a>
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="section-kicker">05 — <span class="pt">Contato</span><span class="en">Contact</span></p>
+          <h2 class="section-title"><span class="pt">Vamos conversar</span><span class="en">Let's talk</span></h2>
+          <p class="prose pt">Aberto a oportunidades e colaborações em IA generativa, sistemas LLM e engenharia de IA.</p>
+          <p class="prose en">Open to opportunities and collaborations in generative AI, LLM systems and AI engineering.</p>
+          <a class="btn primary big" href="mailto:professor.menezesbruno@gmail.com">✉︎ professor.menezesbruno@gmail.com</a>
+          <div class="social center">
+            <a href="https://www.linkedin.com/in/bruno-menezes-93638b23/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/brunoleomenezes" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://sites.google.com/view/professorbrunomenezes" target="_blank" rel="noopener">Portfólio</a>
+            <a href="https://orcid.org/0000-0001-6249-2395" target="_blank" rel="noopener">ORCID</a>
+            <a href="http://lattes.cnpq.br/7671983530035555" target="_blank" rel="noopener">Lattes</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Bruno Menezes · <span class="pt">Hospedado no GitHub Pages</span><span class="en">Hosted on GitHub Pages</span></p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Bruno Menezes</span>
+      <span class="pt">Feito com HTML &amp; CSS · GitHub Pages</span>
+      <span class="en">Built with HTML &amp; CSS · GitHub Pages</span>
+    </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ---------- Idioma (PT/EN) ---------- */
     (function () {
       var body = document.body;
       var saved = localStorage.getItem('lang');
-      if (saved === 'en' || saved === 'pt') setLang(saved);
-      function setLang(lang) {
+      if (saved === 'en' || saved === 'pt') apply(saved);
+      function apply(lang) {
         body.classList.remove('lang-pt', 'lang-en');
         body.classList.add('lang-' + lang);
         document.documentElement.lang = (lang === 'en') ? 'en' : 'pt-BR';
         localStorage.setItem('lang', lang);
       }
       document.getElementById('langToggle').addEventListener('click', function () {
-        setLang(body.classList.contains('lang-en') ? 'pt' : 'en');
+        apply(body.classList.contains('lang-en') ? 'pt' : 'en');
       });
+    })();
+
+    /* ---------- Tema (claro/escuro) ---------- */
+    (function () {
+      var root = document.documentElement;
+      var saved = localStorage.getItem('theme');
+      if (saved) root.setAttribute('data-theme', saved);
+      document.getElementById('themeToggle').addEventListener('click', function () {
+        var cur = root.getAttribute('data-theme');
+        if (!cur) cur = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        var next = cur === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      });
+    })();
+
+    /* ---------- Revelação no scroll ---------- */
+    (function () {
+      var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var items = document.querySelectorAll('.reveal');
+      if (reduce || !('IntersectionObserver' in window)) {
+        items.forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      items.forEach(function (el) { io.observe(el); });
     })();
   </script>
 </body>
