@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=3" />
+  <link rel="stylesheet" href="assets/style.css?v=4" />
 
   <!-- Dados estruturados: Person -->
   <script type="application/ld+json">
@@ -60,6 +60,7 @@
         <a href="#sobre"><span class="pt">Sobre</span><span class="en">About</span></a>
         <a href="#competencias"><span class="pt">Competências</span><span class="en">Skills</span></a>
         <a href="#experiencia"><span class="pt">Experiência</span><span class="en">Experience</span></a>
+        <a href="#artefatos"><span class="pt">Artefatos</span><span class="en">Artifacts</span></a>
         <a href="#formacao"><span class="pt">Formação</span><span class="en">Education</span></a>
         <a href="#contato"><span class="pt">Contato</span><span class="en">Contact</span></a>
       </nav>
@@ -219,10 +220,45 @@
       </div>
     </section>
 
+    <!-- ===================== ARTEFATOS ===================== -->
+    <section id="artefatos" class="section">
+      <div class="container">
+        <p class="section-kicker">04 — <span class="pt">Artefatos</span><span class="en">Artifacts</span></p>
+        <h2 class="section-title"><span class="pt">Sistemas que saíram do papel</span><span class="en">Systems that left the paper</span></h2>
+        <div class="artifacts">
+          <article class="artifact reveal">
+            <figure class="artifact-media">
+              <img src="assets/artefatos/pororoca.png" alt="Logotipo do Pororoca" width="800" height="467" loading="lazy" />
+            </figure>
+            <div class="artifact-body">
+              <p class="artifact-meta">IIA-LNCC · 2025 · <span class="pt">Demonstração no servidor Netuno</span><span class="en">Demo on the Netuno server</span></p>
+              <h3>Pororoca</h3>
+              <p class="artifact-lead pt">Um assistente de perguntas e respostas sobre meteorologia e clima que responde com base na literatura científica e mostra de onde tirou cada afirmação.</p>
+              <p class="artifact-lead en">A question-answering assistant for meteorology and climate that answers from the scientific literature and shows where each claim comes from.</p>
+              <p class="pt">Quem pergunta sobre mudanças climáticas, previsão do tempo ou fenômenos naturais não precisa garimpar dezenas de artigos: o Pororoca lê por você e devolve uma síntese com os links das fontes, para que a resposta possa ser conferida e aprofundada. Serve à revisão bibliográfica de pesquisadores, ao estudo de alunos e à divulgação científica para o público em geral.</p>
+              <p class="en">Anyone asking about climate change, weather forecasting or natural phenomena no longer has to dig through dozens of papers: Pororoca reads them for you and returns a synthesis with links to the sources, so every answer can be checked and explored further. It supports researchers' literature reviews, students' learning and science communication for the general public.</p>
+              <ol class="artifact-steps">
+                <li><strong><span class="pt">Recuperação</span><span class="en">Retrieval</span></strong> <span class="pt">— busca nos resumos dos artigos os trechos mais pertinentes à pergunta, dando peso a estudos recentes sem descartar os trabalhos clássicos.</span><span class="en">— searches paper abstracts for the passages most relevant to the question, favouring recent studies without discarding the classics.</span></li>
+                <li><strong><span class="pt">Síntese</span><span class="en">Synthesis</span></strong> <span class="pt">— um LLM integra as evidências numa resposta única, citando e linkando cada fonte.</span><span class="en">— an LLM combines the evidence into a single answer, citing and linking every source.</span></li>
+              </ol>
+              <ul class="chips">
+                <li>RAG</li><li>LLM</li><li><span class="pt">Busca semântica</span><span class="en">Semantic search</span></li><li><span class="pt">Ciência do clima</span><span class="en">Climate science</span></li>
+              </ul>
+              <div class="artifact-links">
+                <a class="btn primary" href="https://doi.org/10.21203/rs.3.rs-7055155/v1" target="_blank" rel="noopener"><span class="pt">Ler o artigo</span><span class="en">Read the paper</span></a>
+                <span class="pt"><a class="btn ghost" href="https://instituto.ia.lncc.br/pt/news" target="_blank" rel="noopener">Notícia no IIA-LNCC</a></span>
+                <span class="en"><a class="btn ghost" href="https://instituto.ia.lncc.br/en/news/pororoca-the-brazilian-artificial-intelligence-that-translates-climate-science-for-everyone" target="_blank" rel="noopener">News at IIA-LNCC</a></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ===================== FORMAÇÃO & CERTIFICAÇÕES ===================== -->
     <section id="formacao" class="section alt">
       <div class="container">
-        <p class="section-kicker">04 — <span class="pt">Formação &amp; Certificações</span><span class="en">Education &amp; Certifications</span></p>
+        <p class="section-kicker">05 — <span class="pt">Formação &amp; Certificações</span><span class="en">Education &amp; Certifications</span></p>
         <h2 class="section-title"><span class="pt">Base acadêmica</span><span class="en">Academic foundation</span></h2>
         <div class="edu-grid">
           <div class="edu-col reveal">
@@ -260,7 +296,7 @@
     <section id="contato" class="section">
       <div class="container">
         <div class="contact-card reveal">
-          <p class="section-kicker">05 — <span class="pt">Contato</span><span class="en">Contact</span></p>
+          <p class="section-kicker">06 — <span class="pt">Contato</span><span class="en">Contact</span></p>
           <h2 class="section-title"><span class="pt">Vamos conversar</span><span class="en">Let's talk</span></h2>
           <p class="prose pt">Aberto a oportunidades e colaborações em IA generativa, sistemas LLM e engenharia de IA.</p>
           <p class="prose en">Open to opportunities and collaborations in generative AI, LLM systems and AI engineering.</p>

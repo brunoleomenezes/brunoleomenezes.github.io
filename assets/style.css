@@ -252,6 +252,35 @@ body:not(.lang-en) li .en { display: none; }
 .card h3 { margin: 0 0 8px; font-size: 1.15rem; }
 .card p { margin: 0; color: var(--text-soft); font-size: .96rem; }
 
+
+/* Artefatos */
+.artifacts { display: grid; gap: 22px; }
+.artifact {
+  display: grid; grid-template-columns: .9fr 1.1fr; overflow: hidden;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  transition: border-color .2s, box-shadow .2s;
+}
+.artifact:hover { border-color: var(--accent); box-shadow: var(--shadow); }
+.artifact-media {
+  margin: 0; padding: clamp(18px, 3vw, 30px); display: grid; place-items: center;
+  border-right: 1px solid var(--border);
+  background: radial-gradient(90% 70% at 50% 50%, color-mix(in srgb, var(--accent-2) 12%, transparent), transparent 75%);
+}
+.artifact-media img {
+  width: 100%; height: auto; display: block; border-radius: 12px;
+  border: 1px solid var(--border); box-shadow: var(--shadow);
+}
+.artifact-body { padding: clamp(22px, 4vw, 34px); }
+.artifact-meta { font-family: var(--mono); font-size: .78rem; color: var(--accent-2); margin: 0 0 8px; }
+.artifact h3 { margin: 0 0 10px; font-size: 1.5rem; letter-spacing: -.01em; }
+.artifact-body p { color: var(--text-soft); font-size: .97rem; margin: 0 0 14px; }
+.artifact-body .artifact-lead { color: var(--text); font-size: 1.05rem; font-weight: 500; }
+.artifact-steps { margin: 0 0 20px; padding-left: 20px; color: var(--text-soft); font-size: .95rem; }
+.artifact-steps li { margin-bottom: 6px; }
+.artifact-steps strong { color: var(--text); }
+.artifact .chips { margin-bottom: 22px; }
+.artifact-links { display: flex; flex-wrap: wrap; gap: 12px; }
+
 /* Timeline */
 .timeline { list-style: none; padding: 0; margin: 0; max-width: 760px; }
 .timeline li {
@@ -305,6 +334,8 @@ body:not(.lang-en) li .en { display: none; }
   .hero-visual { order: -1; }
   .hero-sub { max-width: none; }
   .cards { grid-template-columns: 1fr; }
+  .artifact { grid-template-columns: 1fr; }
+  .artifact-media { border-right: 0; border-bottom: 1px solid var(--border); }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .edu-grid { grid-template-columns: 1fr; gap: 30px; }
   .nav { display: none; }
