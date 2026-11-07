@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=4" />
+  <link rel="stylesheet" href="assets/style.css?v=5" />
 
   <!-- Dados estruturados: Person -->
   <script type="application/ld+json">
@@ -226,6 +226,31 @@
         <p class="section-kicker">04 — <span class="pt">Artefatos</span><span class="en">Artifacts</span></p>
         <h2 class="section-title"><span class="pt">Sistemas que saíram do papel</span><span class="en">Systems that left the paper</span></h2>
         <div class="artifacts">
+          <article class="artifact reveal">
+            <figure class="artifact-media dark">
+              <img src="assets/artefatos/manaca.png" alt="Identidade visual do Manacá: flores de manacá-da-serra em branco, lilás e púrpura" width="800" height="965" loading="lazy" />
+            </figure>
+            <div class="artifact-body">
+              <p class="artifact-meta">LNCC × NII/LLM-jp · 2026 · <span class="pt">Licença CC BY 4.0</span><span class="en">CC BY 4.0 licence</span></p>
+              <h3>Manacá-1B</h3>
+              <p class="artifact-lead pt">Um modelo de linguagem treinado do zero para o português do Brasil, com cerca de 1,72 bilhão de parâmetros e todo o processo aberto para quem quiser refazê-lo.</p>
+              <p class="artifact-lead en">A language model trained from scratch for Brazilian Portuguese, with about 1.72 billion parameters and the whole process open for anyone to rebuild.</p>
+              <p class="pt">O nome vem do manacá-da-serra, árvore cujas flores passam do branco ao lilás e ao púrpura conforme amadurecem, como o modelo ao longo do treinamento. O projeto nasceu da cooperação científica entre o LNCC e o National Institute of Informatics do Japão, e o repositório traz tudo o que é preciso para repetir o experimento: ambiente em contêiner, preparação do corpus, tokenizador, pré-treino, conversão de formato e avaliação com testes estatísticos pareados.</p>
+              <p class="en">The name comes from the manacá-da-serra, a tree whose flowers turn from white to lilac to purple as they mature, much like the model during training. It grew out of a scientific cooperation between LNCC and Japan's National Institute of Informatics, and the repository ships everything needed to repeat the experiment: containerised environment, corpus pipeline, tokenizer, pretraining, checkpoint conversion and evaluation with paired significance tests.</p>
+              <ol class="artifact-steps">
+                <li><strong><span class="pt">Dados abertos</span><span class="en">Open data</span></strong> <span class="pt">— cerca de 20,1 bilhões de tokens de fontes com licença livre: textos da web brasileira, documentos jurídicos e legislativos e a Wikipédia em português.</span><span class="en">— about 20.1 billion tokens from openly licensed sources: Brazilian web text, legal and legislative documents, and Portuguese Wikipedia.</span></li>
+                <li><strong><span class="pt">Resultado</span><span class="en">Results</span></strong> <span class="pt">— entre os modelos com menos de 7 bilhões de parâmetros, é o melhor em prever a última palavra de uma passagem (LAMBADA-PT: 45,31%) e se iguala aos melhores de seu porte no CALAME-PT.</span><span class="en">— among models under 7 billion parameters, it is the best at predicting the final word of a passage (LAMBADA-PT: 45.31%) and matches the best of its size on CALAME-PT.</span></li>
+              </ol>
+              <ul class="chips">
+                <li><span class="pt">Modelos de linguagem</span><span class="en">LLM</span></li><li><span class="pt">Pré-treino do zero</span><span class="en">Pretraining from scratch</span></li><li><span class="pt">Português do Brasil</span><span class="en">Brazilian Portuguese</span></li><li><span class="pt">Ciência aberta</span><span class="en">Open science</span></li>
+              </ul>
+              <div class="artifact-links">
+                <a class="btn primary" href="https://arxiv.org/abs/2608.30114" target="_blank" rel="noopener"><span class="pt">Artigo (arXiv)</span><span class="en">Paper (arXiv)</span></a>
+                <a class="btn ghost" href="https://huggingface.co/AIInstituteLNCC/manaca-1b-base" target="_blank" rel="noopener"><span class="pt">Modelo (Hugging Face)</span><span class="en">Model (Hugging Face)</span></a>
+                <a class="btn ghost" href="https://github.com/Instituto-IA-LNCC/manaca-1b-base" target="_blank" rel="noopener"><span class="pt">Código (GitHub)</span><span class="en">Code (GitHub)</span></a>
+              </div>
+            </div>
+          </article>
           <article class="artifact reveal">
             <figure class="artifact-media">
               <img src="assets/artefatos/pororoca.png" alt="Logotipo do Pororoca" width="800" height="467" loading="lazy" />
