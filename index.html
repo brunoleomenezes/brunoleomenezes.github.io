@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css?v=5" />
+  <link rel="stylesheet" href="assets/style.css?v=6" />
 
   <!-- Dados estruturados: Person -->
   <script type="application/ld+json">
@@ -225,57 +225,145 @@
       <div class="container">
         <p class="section-kicker">04 — <span class="pt">Artefatos</span><span class="en">Artifacts</span></p>
         <h2 class="section-title"><span class="pt">Sistemas que saíram do papel</span><span class="en">Systems that left the paper</span></h2>
-        <div class="artifacts">
-          <article class="artifact reveal">
-            <figure class="artifact-media dark">
-              <img src="assets/artefatos/manaca.png" alt="Identidade visual do Manacá: flores de manacá-da-serra em branco, lilás e púrpura" width="800" height="965" loading="lazy" />
-            </figure>
-            <div class="artifact-body">
-              <p class="artifact-meta">LNCC × NII/LLM-jp · 2026 · <span class="pt">Licença CC BY 4.0</span><span class="en">CC BY 4.0 licence</span></p>
-              <h3>Manacá-1B</h3>
-              <p class="artifact-lead pt">Um modelo de linguagem treinado do zero para o português do Brasil, com cerca de 1,72 bilhão de parâmetros e todo o processo aberto para quem quiser refazê-lo.</p>
-              <p class="artifact-lead en">A language model trained from scratch for Brazilian Portuguese, with about 1.72 billion parameters and the whole process open for anyone to rebuild.</p>
-              <p class="pt">O nome vem do manacá-da-serra, árvore cujas flores passam do branco ao lilás e ao púrpura conforme amadurecem, como o modelo ao longo do treinamento. O projeto nasceu da cooperação científica entre o LNCC e o National Institute of Informatics do Japão, e o repositório traz tudo o que é preciso para repetir o experimento: ambiente em contêiner, preparação do corpus, tokenizador, pré-treino, conversão de formato e avaliação com testes estatísticos pareados.</p>
-              <p class="en">The name comes from the manacá-da-serra, a tree whose flowers turn from white to lilac to purple as they mature, much like the model during training. It grew out of a scientific cooperation between LNCC and Japan's National Institute of Informatics, and the repository ships everything needed to repeat the experiment: containerised environment, corpus pipeline, tokenizer, pretraining, checkpoint conversion and evaluation with paired significance tests.</p>
-              <ol class="artifact-steps">
-                <li><strong><span class="pt">Dados abertos</span><span class="en">Open data</span></strong> <span class="pt">— cerca de 20,1 bilhões de tokens de fontes com licença livre: textos da web brasileira, documentos jurídicos e legislativos e a Wikipédia em português.</span><span class="en">— about 20.1 billion tokens from openly licensed sources: Brazilian web text, legal and legislative documents, and Portuguese Wikipedia.</span></li>
-                <li><strong><span class="pt">Resultado</span><span class="en">Results</span></strong> <span class="pt">— entre os modelos com menos de 7 bilhões de parâmetros, é o melhor em prever a última palavra de uma passagem (LAMBADA-PT: 45,31%) e se iguala aos melhores de seu porte no CALAME-PT.</span><span class="en">— among models under 7 billion parameters, it is the best at predicting the final word of a passage (LAMBADA-PT: 45.31%) and matches the best of its size on CALAME-PT.</span></li>
-              </ol>
-              <ul class="chips">
-                <li><span class="pt">Modelos de linguagem</span><span class="en">LLM</span></li><li><span class="pt">Pré-treino do zero</span><span class="en">Pretraining from scratch</span></li><li><span class="pt">Português do Brasil</span><span class="en">Brazilian Portuguese</span></li><li><span class="pt">Ciência aberta</span><span class="en">Open science</span></li>
-              </ul>
-              <div class="artifact-links">
-                <a class="btn primary" href="https://arxiv.org/abs/2608.30114" target="_blank" rel="noopener"><span class="pt">Artigo (arXiv)</span><span class="en">Paper (arXiv)</span></a>
-                <a class="btn ghost" href="https://huggingface.co/AIInstituteLNCC/manaca-1b-base" target="_blank" rel="noopener"><span class="pt">Modelo (Hugging Face)</span><span class="en">Model (Hugging Face)</span></a>
-                <a class="btn ghost" href="https://github.com/Instituto-IA-LNCC/manaca-1b-base" target="_blank" rel="noopener"><span class="pt">Código (GitHub)</span><span class="en">Code (GitHub)</span></a>
-              </div>
-            </div>
-          </article>
-          <article class="artifact reveal">
-            <figure class="artifact-media">
-              <img src="assets/artefatos/pororoca.png" alt="Logotipo do Pororoca" width="800" height="467" loading="lazy" />
-            </figure>
-            <div class="artifact-body">
-              <p class="artifact-meta">IIA-LNCC · 2025 · <span class="pt">Demonstração no servidor Netuno</span><span class="en">Demo on the Netuno server</span></p>
-              <h3>Pororoca</h3>
-              <p class="artifact-lead pt">Um assistente de perguntas e respostas sobre meteorologia e clima que responde com base na literatura científica e mostra de onde tirou cada afirmação.</p>
-              <p class="artifact-lead en">A question-answering assistant for meteorology and climate that answers from the scientific literature and shows where each claim comes from.</p>
-              <p class="pt">Quem pergunta sobre mudanças climáticas, previsão do tempo ou fenômenos naturais não precisa garimpar dezenas de artigos: o Pororoca lê por você e devolve uma síntese com os links das fontes, para que a resposta possa ser conferida e aprofundada. Serve à revisão bibliográfica de pesquisadores, ao estudo de alunos e à divulgação científica para o público em geral.</p>
-              <p class="en">Anyone asking about climate change, weather forecasting or natural phenomena no longer has to dig through dozens of papers: Pororoca reads them for you and returns a synthesis with links to the sources, so every answer can be checked and explored further. It supports researchers' literature reviews, students' learning and science communication for the general public.</p>
-              <ol class="artifact-steps">
-                <li><strong><span class="pt">Recuperação</span><span class="en">Retrieval</span></strong> <span class="pt">— busca nos resumos dos artigos os trechos mais pertinentes à pergunta, dando peso a estudos recentes sem descartar os trabalhos clássicos.</span><span class="en">— searches paper abstracts for the passages most relevant to the question, favouring recent studies without discarding the classics.</span></li>
-                <li><strong><span class="pt">Síntese</span><span class="en">Synthesis</span></strong> <span class="pt">— um modelo de linguagem integra as evidências numa resposta única, citando cada fonte com o respectivo endereço.</span><span class="en">— an LLM combines the evidence into a single answer, citing and linking every source.</span></li>
-              </ol>
-              <ul class="chips">
-                <li><span class="pt">Geração aumentada por recuperação</span><span class="en">RAG</span></li><li><span class="pt">Modelos de linguagem</span><span class="en">LLM</span></li><li><span class="pt">Busca semântica</span><span class="en">Semantic search</span></li><li><span class="pt">Ciência do clima</span><span class="en">Climate science</span></li>
-              </ul>
-              <div class="artifact-links">
-                <a class="btn primary" href="https://openreview.net/pdf?id=HW4dYquzhn" target="_blank" rel="noopener"><span class="pt">Artigo (OpenReview)</span><span class="en">Paper (OpenReview)</span></a>
-                <a class="btn ghost" href="https://doi.org/10.21203/rs.3.rs-7055155/v1" target="_blank" rel="noopener"><span class="pt">Versão preliminar (Research Square)</span><span class="en">Preprint (Research Square)</span></a>
-              </div>
-            </div>
-          </article>
+        <p class="muted section-hint pt">Clique em um artefato para ver os detalhes, os resultados e os links.</p>
+        <p class="muted section-hint en">Click an artifact to see its details, results and links.</p>
+        <div class="gallery">
+          <button class="tile reveal" type="button" data-open="art-manaca-instruct" aria-haspopup="dialog">
+            <span class="tile-media dark"><img src="assets/artefatos/manaca-instruct.png" alt="Flor púrpura do manacá" loading="lazy" /></span>
+            <span class="tile-body">
+              <span class="tile-meta"><span class="pt">2026 · Alinhamento</span><span class="en">2026 · Alignment</span></span>
+              <span class="tile-title">Manacá-1B-Instruct <span class="badge"><span class="pt">2 modelos</span><span class="en">2 models</span></span></span>
+              <span class="tile-desc"><span class="pt">Duas gerações do Manacá que conversam, seguem instruções e recusam pedidos perigosos.</span><span class="en">Two generations of Manacá that chat, follow instructions and refuse harmful requests.</span></span>
+              <span class="tile-more"><span class="pt">Ver detalhes</span><span class="en">See details</span> →</span>
+            </span>
+          </button>
+          <button class="tile reveal" type="button" data-open="art-manaca" aria-haspopup="dialog">
+            <span class="tile-media dark"><img src="assets/artefatos/manaca-capa.png" alt="Flores do manacá-da-serra" loading="lazy" /></span>
+            <span class="tile-body">
+              <span class="tile-meta"><span class="pt">2026 · Modelo de linguagem</span><span class="en">2026 · Language model</span></span>
+              <span class="tile-title">Manacá-1B</span>
+              <span class="tile-desc"><span class="pt">Modelo de 1,72 bilhão de parâmetros treinado do zero para o português do Brasil, de forma aberta e reprodutível.</span><span class="en">A 1.72-billion-parameter model trained from scratch for Brazilian Portuguese, openly and reproducibly.</span></span>
+              <span class="tile-more"><span class="pt">Ver detalhes</span><span class="en">See details</span> →</span>
+            </span>
+          </button>
+          <button class="tile reveal" type="button" data-open="art-pororoca" aria-haspopup="dialog">
+            <span class="tile-media"><img src="assets/artefatos/pororoca.png" alt="Logotipo do Pororoca" loading="lazy" /></span>
+            <span class="tile-body">
+              <span class="tile-meta"><span class="pt">2025 · Assistente científico</span><span class="en">2025 · Science assistant</span></span>
+              <span class="tile-title">Pororoca</span>
+              <span class="tile-desc"><span class="pt">Responde perguntas sobre clima e meteorologia a partir de artigos científicos, citando as fontes.</span><span class="en">Answers climate and weather questions from scientific papers, citing the sources.</span></span>
+              <span class="tile-more"><span class="pt">Ver detalhes</span><span class="en">See details</span> →</span>
+            </span>
+          </button>
         </div>
+
+        <dialog class="art-dialog" id="art-manaca-instruct" aria-labelledby="art-manaca-instruct-t">
+          <button class="art-close" type="button" data-close aria-label="Fechar / Close">&times;</button>
+            <article class="artifact">
+              <figure class="artifact-media dark">
+                <img src="assets/artefatos/manaca-instruct.png" alt="Flor púrpura do manacá-da-serra, o estágio maduro" width="720" height="450" loading="lazy" />
+              </figure>
+              <div class="artifact-body">
+                <p class="artifact-meta">LNCC × NII/LLM-jp · 2026 · <span class="pt">Versões de pesquisa experimentais</span><span class="en">Experimental research releases</span></p>
+                <h3 id="art-manaca-instruct-t">Manacá-1B-Instruct <span class="badge"><span class="pt">2 modelos</span><span class="en">2 models</span></span></h3>
+                <p class="artifact-lead pt">Duas gerações do Manacá ajustadas para conversar, seguir instruções e recusar pedidos perigosos, publicadas com todo o caminho percorrido, inclusive as tentativas que deram errado.</p>
+                <p class="artifact-lead en">Two generations of Manacá tuned to chat, follow instructions and turn down harmful requests, released with the entire path taken, including the attempts that failed.</p>
+                <p class="pt">Se o modelo base é a flor branca, estas versões são a flor púrpura: o estágio em que o Manacá aprende a ajudar com segurança. Partindo do mesmo modelo de 1,72 bilhão de parâmetros, cada geração passou por ajuste fino supervisionado com exemplos de instruções em português e, depois, por uma etapa dedicada à segurança. Um achado atravessa as duas: a otimização direta de preferências não bastou para fazer o modelo recusar pedidos nocivos, e a segurança só veio de um ajuste fino em que a recusa é o próprio alvo do treino.</p>
+                <p class="en">If the base model is the white flower, these releases are the purple one: the stage where Manacá learns to help safely. Starting from the same 1.72-billion-parameter model, each generation went through supervised fine-tuning on Portuguese instruction data and then a dedicated safety stage. One finding runs through both: direct preference optimisation was not enough to make the model refuse harmful requests, and safety only came from fine-tuning where refusal is itself the training target.</p>
+                <div class="gen-grid">
+                  <section class="gen">
+                    <p class="gen-tag"><span class="pt">1ª geração · v0.1</span><span class="en">1st generation · v0.1</span></p>
+                    <h4>Manacá-1B-Instruct</h4>
+                    <ul class="gen-facts">
+                      <li><span class="pt">cerca de 141 mil exemplos de instrução</span><span class="en">about 141k instruction examples</span></li>
+                      <li><span class="pt">recusa 75% dos pedidos nocivos inéditos (antes: 0%)</span><span class="en">refuses 75% of unseen harmful requests (before: 0%)</span></li>
+                      <li><span class="pt">lidera o MT-Bench-PT (2,90) e o IFEval-PT entre modelos de porte parecido</span><span class="en">leads MT-Bench-PT (2.90) and IFEval-PT among similarly sized models</span></li>
+                    </ul>
+                    <div class="gen-links">
+                      <a href="https://huggingface.co/AIInstituteLNCC/manaca-1b-instruct" target="_blank" rel="noopener"><span class="pt">Modelo</span><span class="en">Model</span> ↗</a>
+                      <a href="https://github.com/Instituto-IA-LNCC/manaca-1b-instruct" target="_blank" rel="noopener"><span class="pt">Código</span><span class="en">Code</span> ↗</a>
+                    </div>
+                  </section>
+                  <section class="gen">
+                    <p class="gen-tag"><span class="pt">2ª geração · v0.2</span><span class="en">2nd generation · v0.2</span></p>
+                    <h4>Manacá-1B-Instruct-2</h4>
+                    <ul class="gen-facts">
+                      <li><span class="pt">cerca de 291 mil exemplos, o dobro da primeira</span><span class="en">about 291k examples, twice the first</span></li>
+                      <li><span class="pt">recusa 97,2% de 218 pedidos nocivos inéditos, após três rodadas de ajuste de segurança</span><span class="en">refuses 97.2% of 218 unseen harmful requests, after three rounds of safety tuning</span></li>
+                      <li><span class="pt">supera, com significância estatística, quatro modelos brasileiros de referência em segurança</span><span class="en">beats four Brazilian reference models on safety with statistical significance</span></li>
+                    </ul>
+                    <div class="gen-links">
+                      <a href="https://huggingface.co/AIInstituteLNCC/manaca-1b-instruct-2" target="_blank" rel="noopener"><span class="pt">Modelo</span><span class="en">Model</span> ↗</a>
+                      <a href="https://github.com/Instituto-IA-LNCC/manaca-1b-instruct-2" target="_blank" rel="noopener"><span class="pt">Código</span><span class="en">Code</span> ↗</a>
+                    </div>
+                  </section>
+                </div>
+                <p class="note pt">São versões para pesquisa e auditoria: a capacidade geral ainda é modesta e uma boa taxa de recusa não equivale à segurança exigida em produção.</p>
+                <p class="note en">These are research and auditing releases: general capability is still modest, and a good refusal rate is not the same as production-grade safety.</p>
+                <ul class="chips">
+                  <li><span class="pt">Alinhamento</span><span class="en">Alignment</span></li><li><span class="pt">Segurança de IA</span><span class="en">AI safety</span></li><li><span class="pt">Ajuste fino</span><span class="en">Fine-tuning</span></li><li><span class="pt">Português do Brasil</span><span class="en">Brazilian Portuguese</span></li>
+                </ul>
+                <div class="artifact-links">
+                  <a class="btn primary" href="https://arxiv.org/abs/2610.20570" target="_blank" rel="noopener"><span class="pt">Artigo (arXiv)</span><span class="en">Paper (arXiv)</span></a>
+                </div>
+              </div>
+            </article>
+        </dialog>
+        <dialog class="art-dialog" id="art-manaca" aria-labelledby="art-manaca-t">
+          <button class="art-close" type="button" data-close aria-label="Fechar / Close">&times;</button>
+            <article class="artifact">
+              <figure class="artifact-media dark">
+                <img src="assets/artefatos/manaca-capa.png" alt="Identidade visual do Manacá: flores de manacá-da-serra em branco, lilás e púrpura" width="720" height="450" loading="lazy" />
+              </figure>
+              <div class="artifact-body">
+                <p class="artifact-meta">LNCC × NII/LLM-jp · 2026 · <span class="pt">Licença CC BY 4.0</span><span class="en">CC BY 4.0 licence</span></p>
+                <h3 id="art-manaca-t">Manacá-1B</h3>
+                <p class="artifact-lead pt">Um modelo de linguagem treinado do zero para o português do Brasil, com cerca de 1,72 bilhão de parâmetros e todo o processo aberto para quem quiser refazê-lo.</p>
+                <p class="artifact-lead en">A language model trained from scratch for Brazilian Portuguese, with about 1.72 billion parameters and the whole process open for anyone to rebuild.</p>
+                <p class="pt">O nome vem do manacá-da-serra, árvore cujas flores passam do branco ao lilás e ao púrpura conforme amadurecem, como o modelo ao longo do treinamento. O projeto nasceu da cooperação científica entre o LNCC e o National Institute of Informatics do Japão, e o repositório traz tudo o que é preciso para repetir o experimento: ambiente em contêiner, preparação do corpus, tokenizador, pré-treino, conversão de formato e avaliação com testes estatísticos pareados.</p>
+                <p class="en">The name comes from the manacá-da-serra, a tree whose flowers turn from white to lilac to purple as they mature, much like the model during training. It grew out of a scientific cooperation between LNCC and Japan's National Institute of Informatics, and the repository ships everything needed to repeat the experiment: containerised environment, corpus pipeline, tokenizer, pretraining, checkpoint conversion and evaluation with paired significance tests.</p>
+                <ol class="artifact-steps">
+                  <li><strong><span class="pt">Dados abertos</span><span class="en">Open data</span></strong> <span class="pt">— cerca de 20,1 bilhões de tokens de fontes com licença livre: textos da web brasileira, documentos jurídicos e legislativos e a Wikipédia em português.</span><span class="en">— about 20.1 billion tokens from openly licensed sources: Brazilian web text, legal and legislative documents, and Portuguese Wikipedia.</span></li>
+                  <li><strong><span class="pt">Resultado</span><span class="en">Results</span></strong> <span class="pt">— entre os modelos com menos de 7 bilhões de parâmetros, é o melhor em prever a última palavra de uma passagem (LAMBADA-PT: 45,31%) e se iguala aos melhores de seu porte no CALAME-PT.</span><span class="en">— among models under 7 billion parameters, it is the best at predicting the final word of a passage (LAMBADA-PT: 45.31%) and matches the best of its size on CALAME-PT.</span></li>
+                </ol>
+                <ul class="chips">
+                  <li><span class="pt">Modelos de linguagem</span><span class="en">LLM</span></li><li><span class="pt">Pré-treino do zero</span><span class="en">Pretraining from scratch</span></li><li><span class="pt">Português do Brasil</span><span class="en">Brazilian Portuguese</span></li><li><span class="pt">Ciência aberta</span><span class="en">Open science</span></li>
+                </ul>
+                <div class="artifact-links">
+                  <a class="btn primary" href="https://arxiv.org/abs/2608.30114" target="_blank" rel="noopener"><span class="pt">Artigo (arXiv)</span><span class="en">Paper (arXiv)</span></a>
+                  <a class="btn ghost" href="https://huggingface.co/AIInstituteLNCC/manaca-1b-base" target="_blank" rel="noopener"><span class="pt">Modelo (Hugging Face)</span><span class="en">Model (Hugging Face)</span></a>
+                  <a class="btn ghost" href="https://github.com/Instituto-IA-LNCC/manaca-1b-base" target="_blank" rel="noopener"><span class="pt">Código (GitHub)</span><span class="en">Code (GitHub)</span></a>
+                </div>
+              </div>
+            </article>
+        </dialog>
+        <dialog class="art-dialog" id="art-pororoca" aria-labelledby="art-pororoca-t">
+          <button class="art-close" type="button" data-close aria-label="Fechar / Close">&times;</button>
+            <article class="artifact">
+              <figure class="artifact-media">
+                <img src="assets/artefatos/pororoca.png" alt="Logotipo do Pororoca" width="800" height="467" loading="lazy" />
+              </figure>
+              <div class="artifact-body">
+                <p class="artifact-meta">IIA-LNCC · 2025 · <span class="pt">Demonstração no servidor Netuno</span><span class="en">Demo on the Netuno server</span></p>
+                <h3 id="art-pororoca-t">Pororoca</h3>
+                <p class="artifact-lead pt">Um assistente de perguntas e respostas sobre meteorologia e clima que responde com base na literatura científica e mostra de onde tirou cada afirmação.</p>
+                <p class="artifact-lead en">A question-answering assistant for meteorology and climate that answers from the scientific literature and shows where each claim comes from.</p>
+                <p class="pt">Quem pergunta sobre mudanças climáticas, previsão do tempo ou fenômenos naturais não precisa garimpar dezenas de artigos: o Pororoca lê por você e devolve uma síntese com os links das fontes, para que a resposta possa ser conferida e aprofundada. Serve à revisão bibliográfica de pesquisadores, ao estudo de alunos e à divulgação científica para o público em geral.</p>
+                <p class="en">Anyone asking about climate change, weather forecasting or natural phenomena no longer has to dig through dozens of papers: Pororoca reads them for you and returns a synthesis with links to the sources, so every answer can be checked and explored further. It supports researchers' literature reviews, students' learning and science communication for the general public.</p>
+                <ol class="artifact-steps">
+                  <li><strong><span class="pt">Recuperação</span><span class="en">Retrieval</span></strong> <span class="pt">— busca nos resumos dos artigos os trechos mais pertinentes à pergunta, dando peso a estudos recentes sem descartar os trabalhos clássicos.</span><span class="en">— searches paper abstracts for the passages most relevant to the question, favouring recent studies without discarding the classics.</span></li>
+                  <li><strong><span class="pt">Síntese</span><span class="en">Synthesis</span></strong> <span class="pt">— um modelo de linguagem integra as evidências numa resposta única, citando cada fonte com o respectivo endereço.</span><span class="en">— an LLM combines the evidence into a single answer, citing and linking every source.</span></li>
+                </ol>
+                <ul class="chips">
+                  <li><span class="pt">Geração aumentada por recuperação</span><span class="en">RAG</span></li><li><span class="pt">Modelos de linguagem</span><span class="en">LLM</span></li><li><span class="pt">Busca semântica</span><span class="en">Semantic search</span></li><li><span class="pt">Ciência do clima</span><span class="en">Climate science</span></li>
+                </ul>
+                <div class="artifact-links">
+                  <a class="btn primary" href="https://openreview.net/pdf?id=HW4dYquzhn" target="_blank" rel="noopener"><span class="pt">Artigo (OpenReview)</span><span class="en">Paper (OpenReview)</span></a>
+                  <a class="btn ghost" href="https://doi.org/10.21203/rs.3.rs-7055155/v1" target="_blank" rel="noopener"><span class="pt">Versão preliminar (Research Square)</span><span class="en">Preprint (Research Square)</span></a>
+                </div>
+              </div>
+            </article>
+        </dialog>
       </div>
     </section>
 
@@ -374,6 +462,30 @@
         var next = cur === 'dark' ? 'light' : 'dark';
         root.setAttribute('data-theme', next);
         localStorage.setItem('theme', next);
+      });
+    })();
+
+    /* ---------- Artefatos: janela de detalhes ---------- */
+    (function () {
+      var aberto = null;
+      document.querySelectorAll('[data-open]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var d = document.getElementById(btn.getAttribute('data-open'));
+          if (!d || typeof d.showModal !== 'function') return;
+          aberto = btn;
+          d.showModal();
+          d.scrollTop = 0;
+          document.documentElement.classList.add('modal-open');
+        });
+      });
+      document.querySelectorAll('.art-dialog').forEach(function (d) {
+        d.addEventListener('click', function (e) {
+          if (e.target === d || e.target.closest('[data-close]')) d.close();
+        });
+        d.addEventListener('close', function () {
+          document.documentElement.classList.remove('modal-open');
+          if (aberto) aberto.focus();
+        });
       });
     })();
 
