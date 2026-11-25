@@ -22,6 +22,8 @@ Desenvolvida com foco em performance, acessibilidade e boas práticas atuais:
 .
 ├── index.html          # conteúdo e marcação semântica
 ├── assets/style.css    # design system (tokens, temas, componentes)
+├── assets/Bruno_Menezes_CV_{PT,EN}.pdf  # currículos (o botão abre o do idioma ativo)
+├── cv-src/             # fonte dos currículos: cv.html + build.js (node cv-src/build.js)
 ├── .nojekyll           # desativa o Jekyll
 └── README.md
 ```

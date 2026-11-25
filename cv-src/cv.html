@@ -1,0 +1,297 @@
+<!doctype html>
+<!--
+  Fonte dos currículos em PDF (assets/Bruno_Menezes_CV_PT.pdf e _EN.pdf).
+  Cada bloco tem as versões .pt e .en; o build.js gera um PDF por idioma.
+  Para regerar: node cv-src/build.js
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Bruno Menezes — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  :root {
+    --blue: #2a4fb5;
+    --ink: #1c1c1c;
+    --muted: #4a4a4a;
+    --rule: #1c1c1c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 210mm; height: 297mm; }
+  body {
+    font-family: 'Gothic A1', 'Helvetica Neue', Arial, sans-serif;
+    color: var(--ink);
+    background: #fff;
+    font-size: 8.3pt;
+    line-height: 1.38;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body.lang-pt .en, body.lang-en .pt { display: none !important; }
+
+  header {
+    background: var(--blue);
+    color: #fff;
+    height: 38mm;
+    display: flex;
+    align-items: center;
+    padding: 0 16mm;
+    position: relative;
+    overflow: hidden;
+  }
+  header .ring {
+    position: absolute; right: -14mm; top: -14mm; width: 62mm; height: 62mm;
+    opacity: .22;
+  }
+  header h1 {
+    font-size: 34pt;
+    letter-spacing: .14em;
+    font-weight: 300;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  header h1 b { font-weight: 900; margin-right: .3em; }
+  header .role {
+    margin-top: 4mm;
+    font-size: 10.5pt;
+    letter-spacing: .12em;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: .92;
+  }
+  .contact {
+    display: flex; gap: 10mm; justify-content: flex-start;
+    padding: 3.2mm 16mm; font-size: 8.4pt; color: var(--muted);
+    border-bottom: 1.2pt solid var(--rule);
+  }
+  .contact span strong { color: var(--ink); font-weight: 600; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 58mm 1fr;
+    gap: 0 9mm;
+    padding: 5mm 14mm 0 16mm;
+  }
+  h2 {
+    font-size: 11pt;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding-bottom: 1.4mm;
+    border-bottom: 1.2pt solid var(--rule);
+    margin-bottom: 2.6mm;
+  }
+  aside section, main section { margin-bottom: 4.6mm; }
+  aside p { text-align: left; }
+  ul.dots { list-style: none; }
+  ul.dots li { position: relative; padding-left: 3.6mm; margin-bottom: 1.1mm; }
+  ul.dots li::before {
+    content: ""; position: absolute; left: 0; top: 1.55mm;
+    width: 1.3mm; height: 1.3mm; border-radius: 50%; background: var(--blue);
+  }
+  .tags { display: flex; flex-wrap: wrap; gap: 1.4mm; }
+  .tags span {
+    border: .6pt solid #b9c4e6; color: var(--ink); background: #eef2fb;
+    border-radius: 1mm; padding: .4mm 1.6mm; font-size: 7.8pt;
+  }
+
+  .job { margin-bottom: 3mm; break-inside: avoid; }
+  .job h3 {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 3mm;
+    font-size: 8.6pt; font-weight: 700; letter-spacing: .02em; text-transform: uppercase;
+  }
+  .job h3 .org { color: var(--blue); }
+  .job .when { font-weight: 400; color: var(--muted); white-space: nowrap; flex: none; }
+  .job p { color: var(--muted); text-align: justify; margin-top: .6mm; }
+
+  .edu { margin-bottom: 1.8mm; break-inside: avoid; }
+  .edu h3 { font-size: 8.6pt; font-weight: 700; text-transform: uppercase; letter-spacing: .02em; }
+  .edu ul { list-style: none; color: var(--muted); }
+  .edu li::before { content: "– "; }
+  .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 6mm; }
+</style>
+</head>
+<body class="lang-pt">
+  <header>
+    <svg class="ring" viewBox="0 0 100 100" fill="none" stroke="#fff" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" stroke-width="1.2"/>
+      <circle cx="50" cy="50" r="40" stroke-width="2" stroke-dasharray="1 2.2"/>
+      <circle cx="50" cy="50" r="33" stroke-width="1.6" stroke-dasharray="12 5"/>
+      <circle cx="50" cy="50" r="26" stroke-width="1"/>
+    </svg>
+    <div>
+      <h1><b>BRUNO</b>MENEZES</h1>
+      <p class="role pt">Engenheiro de IA · Sistemas com LLMs e RAG</p>
+      <p class="role en">AI Engineer · LLM &amp; RAG Systems</p>
+    </div>
+  </header>
+
+  <div class="contact">
+    <span><strong class="pt">Celular:</strong><strong class="en">Phone:</strong> +55 (24) 99219-6422</span>
+    <span><strong>E-mail:</strong> menezesbruno@protonmail.com</span>
+    <span><strong>Web:</strong> brunoleomenezes.github.io</span>
+  </div>
+
+  <div class="grid">
+    <aside>
+      <section>
+        <h2><span class="pt">Perfil pessoal</span><span class="en">Profile</span></h2>
+        <p class="pt">Engenheiro de IA especializado em sistemas em produção com LLMs, RAG e pipelines de dados distribuídos, com experiência em processamento de grandes volumes de dados, deploy em cloud e integração via APIs REST.</p>
+        <p class="en">AI engineer specializing in production systems built on LLMs, RAG and distributed data pipelines, with experience in large-scale data processing, cloud deployment and integration through REST APIs.</p>
+      </section>
+
+      <section>
+        <h2><span class="pt">Áreas de experiência</span><span class="en">Areas of expertise</span></h2>
+        <ul class="dots pt">
+          <li>Inteligência Artificial e LLMs</li>
+          <li>RAG, OCR e deploy de modelos</li>
+          <li>Cloud</li>
+          <li>Java, C, R, Python e SQL</li>
+          <li>Linux, Microsoft e APIs</li>
+        </ul>
+        <ul class="dots en">
+          <li>Artificial Intelligence and LLMs</li>
+          <li>RAG, OCR and model deployment</li>
+          <li>Cloud</li>
+          <li>Java, C, R, Python and SQL</li>
+          <li>Linux, Microsoft and APIs</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="pt">Habilidades</span><span class="en">Skills</span></h2>
+        <ul class="dots pt">
+          <li>Arquitetura de sistemas com LLMs</li>
+          <li>Pipelines de RAG</li>
+          <li>Processamento distribuído de dados</li>
+          <li>Implantação de modelos (APIs Flask)</li>
+          <li>Busca vetorial (FAISS)</li>
+          <li>Infraestrutura de IA em cloud</li>
+        </ul>
+        <ul class="dots en">
+          <li>LLM system architecture</li>
+          <li>RAG pipelines</li>
+          <li>Distributed data processing</li>
+          <li>Model deployment (Flask APIs)</li>
+          <li>Vector search (FAISS)</li>
+          <li>Cloud AI infrastructure</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="pt">Idiomas</span><span class="en">Languages</span></h2>
+        <ul class="dots pt">
+          <li>Português (nativo)</li>
+          <li>Inglês</li>
+          <li>Espanhol</li>
+        </ul>
+        <ul class="dots en">
+          <li>Portuguese (native)</li>
+          <li>English</li>
+          <li>Spanish</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="pt">Competências</span><span class="en">Tech stack</span></h2>
+        <div class="tags">
+          <span>Python</span><span>R</span><span>SQL</span><span>Java</span><span>C</span>
+          <span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span>
+          <span>Spark</span><span>Hadoop</span><span>Pandas</span><span>Flask</span>
+          <span><span class="pt">APIs REST</span><span class="en">REST APIs</span></span>
+          <span>NLP</span>
+          <span><span class="pt">Estatística</span><span class="en">Statistics</span></span>
+          <span>Machine Learning</span><span>Big Data</span>
+        </div>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2><span class="pt">Experiência</span><span class="en">Experience</span></h2>
+
+        <div class="job">
+          <h3><span class="t"><span class="org">LNCC</span> <span class="pt">— Laboratório Nacional de Computação Científica</span><span class="en">— National Laboratory for Scientific Computing</span></span><span class="when"><span class="pt">2025 – atual</span><span class="en">2025 – present</span></span></h3>
+          <p class="pt">Implementação de sistemas de grande escala baseados em IA. Desenvolvimento de pipelines RAG de múltiplos estágios. Otimização de fluxos de trabalho de inferência para reduzir a latência e o custo computacional. Construção de frameworks e serviços de backend escaláveis para aplicações orientadas por IA.</p>
+          <p class="en">Implementation of large-scale AI-based systems. Development of multi-stage RAG pipelines. Optimization of inference workflows to reduce latency and computational cost. Building scalable frameworks and backend services for AI-driven applications.</p>
+        </div>
+
+        <div class="job">
+          <h3><span class="t"><span class="pt">Especialista em IA</span><span class="en">AI Specialist</span> · <span class="org">Capgemini S/A</span></span><span class="when">2022 – 2026</span></h3>
+          <p class="pt">Atuação no desenvolvimento e implementação de IA, com processamento de grandes volumes de dados utilizando o ecossistema Hadoop. Construção de pipelines de ingestão e processamento distribuído, redução de latência em fluxos de inferência e otimização de desempenho em ambiente produtivo. Deploy de modelos em ambiente cloud com integração via APIs REST (Flask), garantindo escalabilidade, versionamento e integração com sistemas corporativos em produção.</p>
+          <p class="en">Development and implementation of AI solutions, processing large data volumes with the Hadoop ecosystem. Built ingestion and distributed processing pipelines, reduced latency in inference workflows and optimized performance in production. Deployed models to the cloud with REST API integration (Flask), ensuring scalability, versioning and integration with corporate systems in production.</p>
+        </div>
+
+        <div class="job">
+          <h3><span class="t"><span class="pt">Consultor em Big Data e Ciência de Dados</span><span class="en">Big Data &amp; Data Science Consultant</span> · <span class="org">SENAI CIMATEC</span></span><span class="when">2021 – 2023</span></h3>
+          <p class="pt">Atuação docente em cursos de Graduação e Pós-Graduação em Data Science &amp; Analytics. Atuação em projetos e pesquisas envolvendo Inteligência Artificial, Modelagem Computacional, Desenvolvimento de Sistemas e áreas correlatas.</p>
+          <p class="en">Lecturer in undergraduate and graduate programs in Data Science &amp; Analytics. Worked on projects and research involving Artificial Intelligence, Computational Modeling, Systems Development and related fields.</p>
+        </div>
+
+        <div class="job">
+          <h3><span class="t"><span class="pt">Desenvolvedor</span><span class="en">Software Developer</span> · <span class="org pt">Atuação via CNPJ</span><span class="org en">Self-employed</span></span><span class="when">2021 – 2024</span></h3>
+          <p class="pt">Desenvolvedor de sistemas em projetos abrangendo diversas áreas da tecnologia, com ênfase em inteligência artificial e modelos de linguagem. Python para desenvolver aplicações e scripts avançados, incluindo a criação de APIs com Flask e a integração com modelos de linguagem de grandes dimensões (LLMs). Java e C para implementar soluções robustas e de alto desempenho, especialmente em contextos que exigem processamento paralelo e otimização de recursos.</p>
+          <p class="en">Systems developer on projects spanning several technology areas, with an emphasis on artificial intelligence and language models. Python for advanced applications and scripts, including Flask APIs and integration with large language models (LLMs). Java and C for robust, high-performance solutions, especially where parallel processing and resource optimization are required.</p>
+        </div>
+
+        <div class="job">
+          <h3><span class="t"><span class="pt">Pesquisador Bolsista de Modelagem Computacional</span><span class="en">Research Fellow in Computational Modeling</span> · <span class="org">SENAI CIMATEC</span></span><span class="when">2011 – 2019</span></h3>
+          <p class="pt">Criação e desenvolvimento de um Centro de Competência em IA, para formação de competência e investigação de desafios com soluções inovadoras nas áreas de Petróleo e Gás, Manutenção e Processos Industriais, Ciências Atmosféricas, Saúde, Energias Renováveis, Visão Computacional, Processamento de Linguagem Natural, dentre outras.</p>
+          <p class="en">Created and developed an AI Competence Center to build expertise and investigate challenges with innovative solutions in Oil &amp; Gas, Maintenance and Industrial Processes, Atmospheric Sciences, Healthcare, Renewable Energy, Computer Vision and Natural Language Processing, among others.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="pt">Formação acadêmica</span><span class="en">Education</span></h2>
+        <div class="edu-grid">
+          <div>
+            <div class="edu">
+              <h3><span class="pt">Centro Universitário SENAI CIMATEC</span><span class="en">SENAI CIMATEC University Center</span></h3>
+              <ul class="pt">
+                <li>Doutorado em Modelagem Computacional e Tecnologia Industrial</li>
+                <li>Mestrado em Modelagem Computacional e Tecnologia Industrial</li>
+                <li>Graduação em Logística</li>
+              </ul>
+              <ul class="en">
+                <li>Ph.D. in Computational Modeling and Industrial Technology</li>
+                <li>M.Sc. in Computational Modeling and Industrial Technology</li>
+                <li>Bachelor's degree in Logistics</li>
+              </ul>
+            </div>
+            <div class="edu">
+              <h3><span class="pt">Universidade Federal do Rio de Janeiro</span><span class="en">Federal University of Rio de Janeiro</span></h3>
+              <ul><li class="pt">Especialização em Engenharia de Dados</li><li class="en">Graduate specialization in Data Engineering</li></ul>
+            </div>
+            <div class="edu">
+              <h3><span class="pt">Centro Universitário SENAC – SP</span><span class="en">SENAC University Center – São Paulo</span></h3>
+              <ul><li class="pt">Graduação em Administração de Empresas</li><li class="en">Bachelor's degree in Business Administration</li></ul>
+            </div>
+          </div>
+          <div>
+            <div class="edu">
+              <h3><span class="pt">Universidade Cidade de São Paulo</span><span class="en">Universidade Cidade de São Paulo</span></h3>
+              <ul><li class="pt">Graduação em Engenharia de Produção</li><li class="en">Bachelor's degree in Production Engineering</li></ul>
+            </div>
+            <div class="edu">
+              <h3>SENAI – BA</h3>
+              <ul><li class="pt">Técnico em Desenvolvimento de Sistemas</li><li class="en">Technical degree in Systems Development</li></ul>
+            </div>
+            <div class="edu">
+              <h3>Alura</h3>
+              <ul><li class="pt">Python · C · Java · Ciência de Dados · IA</li><li class="en">Python · C · Java · Data Science · AI</li></ul>
+            </div>
+            <div class="edu">
+              <h3>Data Science Academy</h3>
+              <ul><li class="pt">Engenharia de Dados</li><li class="en">Data Engineering</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

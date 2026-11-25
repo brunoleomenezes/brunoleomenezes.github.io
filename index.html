@@ -90,7 +90,7 @@
           </ul>
           <div class="cta">
             <a class="btn primary" href="#contato"><span class="pt">Fale comigo</span><span class="en">Get in touch</span></a>
-            <a class="btn ghost" href="assets/Bruno_Menezes_CV.pdf" target="_blank" rel="noopener"><span class="pt">Currículo (PDF)</span><span class="en">Résumé (PDF)</span></a>
+            <a class="btn ghost" id="cvLink" href="assets/Bruno_Menezes_CV_PT.pdf" target="_blank" rel="noopener"><span class="pt">Currículo (PDF)</span><span class="en">Résumé (PDF)</span></a>
           </div>
           <div class="social">
             <a href="https://www.linkedin.com/in/bruno-menezes-93638b23/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
@@ -445,6 +445,8 @@
         body.classList.add('lang-' + lang);
         document.documentElement.lang = (lang === 'en') ? 'en' : 'pt-BR';
         localStorage.setItem('lang', lang);
+        var cv = document.getElementById('cvLink');
+        if (cv) cv.href = 'assets/Bruno_Menezes_CV_' + (lang === 'en' ? 'EN' : 'PT') + '.pdf';
       }
       document.getElementById('langToggle').addEventListener('click', function () {
         apply(body.classList.contains('lang-en') ? 'pt' : 'en');
